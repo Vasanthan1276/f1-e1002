@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-06T11:37:42.413716+00:00",
-  "generatedLocal": "Sun 06 Sep 2026, 07:37 PM",
+  "generatedAt": "2026-09-06T15:24:28.239195+00:00",
+  "generatedLocal": "Sun 06 Sep 2026, 11:24 PM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -10,38 +10,38 @@
     "weatherType": "current"
   },
   "nextRace": {
-    "round": 13,
-    "name": "Italian Grand Prix",
-    "date": "2026-09-06",
-    "datetimeUtc": "2026-09-06T13:00:00+00:00",
-    "localDateTime": "Sun 06 Sep, 09:00 PM",
-    "circuit": "Autodromo Nazionale di Monza",
-    "location": "Monza, Italy",
+    "round": 14,
+    "name": "Spanish Grand Prix",
+    "date": "2026-09-13",
+    "datetimeUtc": "2026-09-13T13:00:00+00:00",
+    "localDateTime": "Sun 13 Sep, 09:00 PM",
+    "circuit": "Madring",
+    "location": "Madrid, Spain",
     "sessions": [
       {
         "name": "FP1",
-        "datetimeUtc": "2026-09-04T10:30:00+00:00",
-        "local": "Fri 04 Sep, 06:30 PM"
+        "datetimeUtc": "2026-09-11T11:30:00+00:00",
+        "local": "Fri 11 Sep, 07:30 PM"
       },
       {
         "name": "FP2",
-        "datetimeUtc": "2026-09-04T14:00:00+00:00",
-        "local": "Fri 04 Sep, 10:00 PM"
+        "datetimeUtc": "2026-09-11T15:00:00+00:00",
+        "local": "Fri 11 Sep, 11:00 PM"
       },
       {
         "name": "FP3",
-        "datetimeUtc": "2026-09-05T10:30:00+00:00",
-        "local": "Sat 05 Sep, 06:30 PM"
+        "datetimeUtc": "2026-09-12T10:30:00+00:00",
+        "local": "Sat 12 Sep, 06:30 PM"
       },
       {
         "name": "Qualifying",
-        "datetimeUtc": "2026-09-05T14:00:00+00:00",
-        "local": "Sat 05 Sep, 10:00 PM"
+        "datetimeUtc": "2026-09-12T14:00:00+00:00",
+        "local": "Sat 12 Sep, 10:00 PM"
       },
       {
         "name": "Race",
-        "datetimeUtc": "2026-09-06T13:00:00+00:00",
-        "local": "Sun 06 Sep, 09:00 PM"
+        "datetimeUtc": "2026-09-13T13:00:00+00:00",
+        "local": "Sun 13 Sep, 09:00 PM"
       }
     ]
   },
