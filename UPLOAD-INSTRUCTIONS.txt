@@ -1,0 +1,27 @@
+F1 E1002 STATIC HUB — QUICK INSTALL
+===================================
+
+Recommended repository name:
+  f1-e1002
+
+1. Create GitHub repo Vasanthan1276/f1-e1002.
+2. Upload ALL files/folders from this ZIP to the repo root.
+3. If needed:
+     Settings > Actions > General > Workflow permissions
+     Select "Read and write permissions".
+4. Run once:
+     Actions > Update F1 E1002 Static Pages > Run workflow
+5. Enable GitHub Pages:
+     Settings > Pages > Deploy from branch > main > /(root)
+6. Wait for Pages to publish.
+
+E1002 URLs:
+  https://vasanthan1276.github.io/f1-e1002/calendar.bmp
+  https://vasanthan1276.github.io/f1-e1002/standings.bmp
+  https://vasanthan1276.github.io/f1-e1002/last-race.bmp
+  https://vasanthan1276.github.io/f1-e1002/teams.bmp
+
+Home Assistant:
+  https://vasanthan1276.github.io/f1-e1002/homeassistant.html
+
+The workflow updates hourly by default.

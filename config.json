@@ -1,0 +1,8 @@
+{
+  "language": "en",
+  "timezone": "Asia/Singapore",
+  "display": "spectra6",
+  "weather": true,
+  "weather_type": "current",
+  "homeassistant_title": "F1 Hub"
+}

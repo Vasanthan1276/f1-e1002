@@ -1,0 +1,61 @@
+name: Update F1 E1002 Static Pages
+
+on:
+  schedule:
+    # InkyCloud itself regenerates calendar/teams hourly.
+    # Running hourly keeps current weather and race-weekend content fresh,
+    # while the E1002 only downloads already-generated static files.
+    - cron: "12 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-e1002-static-pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch F1 data and generate static pages
+        run: python scripts/update_f1_pages.py
+
+      - name: Commit refreshed F1 pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            calendar.bmp \
+            teams.bmp \
+            standings.bmp \
+            last-race.bmp \
+            f1-data.json \
+            homeassistant.html \
+            index.html \
+            data/source-etags.json \
+            data/update-status.json
+
+          if git diff --cached --quiet; then
+            echo "No F1 page changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update F1 static pages"
+          git push
