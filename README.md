@@ -689,6 +689,114 @@ For schedule changes, edit:
 
 ---
 
+---
+
+# September 2026 refinement update
+
+After reviewing the first live GitHub Pages output on both desktop and the E1002 target layout, the F1 hub received a second visual refinement pass.
+
+## E1002 Teams & Drivers page
+
+The upstream InkyCloud teams image includes a large black outer border.
+
+The update script now automatically:
+
+1. detects the useful non-dark content area;
+2. crops the unnecessary outer border;
+3. scales the useful panel back to the full **800 × 480** E1002 canvas.
+
+This makes the team names, driver names, positions and points noticeably larger on the physical e-paper display.
+
+The operation is designed to be idempotent, so the hourly GitHub Action will not progressively zoom an already-optimized image.
+
+## E1002 Last Race page
+
+The custom Last Race page now uses almost the complete 800 × 480 canvas.
+
+Improvements include:
+
+- smaller outer margins;
+- larger podium cards;
+- larger driver and constructor text;
+- larger Top 10 classification table;
+- clearer time/status and points columns;
+- fastest-lap information retained in the footer.
+
+## Championship Standings page
+
+The existing split-screen layout was retained because it already uses the E1002 space efficiently:
+
+- Top 12 drivers on the left;
+- all constructors on the right;
+- championship leaders highlighted.
+
+## Next Race page
+
+The InkyCloud calendar layout was retained because it already provides a strong combination of:
+
+- circuit map;
+- Singapore-local session times;
+- current weather;
+- countdown;
+- track information;
+- previous-year qualifying/race reference.
+
+The older year shown at the bottom of the page is intentionally the **previous-year event reference**, not stale current-season data.
+
+## Home Assistant overview
+
+The opening Home Assistant tab has been upgraded from a mostly duplicated schedule view into a compact F1 status dashboard.
+
+It now shows:
+
+- the static next-race image;
+- next Grand Prix;
+- **next session**;
+- live countdown to that session based on the generated data;
+- current driver championship leader and P2;
+- top three constructors;
+- race time in Singapore;
+- a note that current weather and the previous-year circuit reference are visible in the calendar image.
+
+The other tabs remain:
+
+```text
+Next race | Standings | Last race | Teams & drivers
+```
+
+This keeps the E1002 pages glanceable while allowing Home Assistant to provide the richer F1 information view.
+
+## Deployment after this refinement
+
+The source files that need manual replacement are:
+
+```text
+scripts/update_f1_pages.py
+README.md
+```
+
+After committing them, run:
+
+```text
+Actions → Update F1 E1002 Static Pages → Run workflow
+```
+
+The workflow will regenerate the live output files automatically:
+
+```text
+calendar.bmp
+teams.bmp
+standings.bmp
+last-race.bmp
+f1-data.json
+homeassistant.html
+index.html
+data/source-etags.json
+data/update-status.json
+```
+
+Do not manually edit those generated files because the next successful workflow run will replace them.
+
 # Data and image attribution
 
 This is a personal integration project and is not affiliated with Formula 1, the FIA, InkyCloud, or Jolpica.

@@ -1,27 +1,48 @@
-F1 E1002 STATIC HUB — QUICK INSTALL
-===================================
+F1 E1002 REFINEMENT v2
+======================
 
-Recommended repository name:
-  f1-e1002
+Repository:
+  Vasanthan1276/f1-e1002
 
-1. Create GitHub repo Vasanthan1276/f1-e1002.
-2. Upload ALL files/folders from this ZIP to the repo root.
-3. If needed:
-     Settings > Actions > General > Workflow permissions
-     Select "Read and write permissions".
-4. Run once:
-     Actions > Update F1 E1002 Static Pages > Run workflow
-5. Enable GitHub Pages:
-     Settings > Pages > Deploy from branch > main > /(root)
-6. Wait for Pages to publish.
+Replace only these TWO source files:
+  1. README.md
+     -> repository root
 
-E1002 URLs:
-  https://vasanthan1276.github.io/f1-e1002/calendar.bmp
-  https://vasanthan1276.github.io/f1-e1002/standings.bmp
-  https://vasanthan1276.github.io/f1-e1002/last-race.bmp
-  https://vasanthan1276.github.io/f1-e1002/teams.bmp
+  2. scripts/update_f1_pages.py
+     -> /scripts/update_f1_pages.py
+
+Then commit the changes and run:
+
+  Actions
+  -> Update F1 E1002 Static Pages
+  -> Run workflow
+  -> main
+  -> Run workflow
+
+The Action will regenerate the output files automatically.
+
+WHAT CHANGED
+------------
+E1002:
+- Teams & Drivers: removes the large outer black border and expands
+  useful content to the full 800x480 canvas.
+- Last Race: fills the canvas better, enlarges podium cards and the
+  Top 10 table, and improves small-text readability.
+- Standings: retained because the current layout already works well.
+- Next Race: retained from InkyCloud.
 
 Home Assistant:
-  https://vasanthan1276.github.io/f1-e1002/homeassistant.html
+- Next Race overview becomes an F1 status panel.
+- Adds next-session countdown.
+- Adds driver championship leader and P2.
+- Adds top-3 constructor snapshot.
+- Keeps the four navigation tabs.
 
-The workflow updates hourly by default.
+README:
+- Documents the visual refinement and deployment method.
+
+IMPORTANT
+---------
+Do NOT upload any placeholder BMP files from an old package.
+The GitHub Action should regenerate the current live images from the
+latest F1 data after the two source files are replaced.

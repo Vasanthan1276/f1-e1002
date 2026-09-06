@@ -86,6 +86,40 @@ def fetch_bmp_with_etag(url: str, params: dict, destination: Path, etag_key: str
     return "updated"
 
 
+
+def optimize_teams_bmp(path: Path) -> None:
+    """Crop InkyCloud's outer black border and scale useful content to 800x480."""
+    if not path.exists():
+        return
+
+    image = Image.open(path).convert("RGB")
+    if image.size != (800, 480):
+        return
+
+    mask = image.convert("L").point(lambda p: 255 if p > 45 else 0)
+    bbox = mask.getbbox()
+    if not bbox:
+        return
+
+    left, top, right, bottom = bbox
+    width = right - left
+    height = bottom - top
+
+    # Once optimized, the content already reaches almost the full canvas.
+    if width >= 790 and height >= 470:
+        return
+
+    pad = 3
+    left = max(0, left - pad)
+    top = max(0, top - pad)
+    right = min(800, right + pad)
+    bottom = min(480, bottom + pad)
+
+    cropped = image.crop((left, top, right, bottom))
+    resized = cropped.resize((800, 480), Image.Resampling.LANCZOS)
+    resized.save(path, "BMP")
+
+
 def font(size: int, bold: bool = False):
     candidates = [
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
@@ -338,62 +372,152 @@ def render_last_race(data: dict, destination: Path, tz: ZoneInfo):
     img = Image.new("RGB", (800, 480), WHITE)
     draw = ImageDraw.Draw(img)
 
-    draw.rectangle((0, 0, 800, 58), fill=BLACK)
-    draw.text((20, 10), "LAST RACE", font=font(30, True), fill=WHITE)
+    draw.rectangle((0, 0, 800, 54), fill=BLACK)
+    draw.text((16, 8), "LAST RACE", font=font(29, True), fill=WHITE)
+
     title = race.get("name", "No race result available")
-    title_font = font(20, True)
-    draw.text((780 - text_width(draw, title, title_font), 18), title, font=title_font, fill=WHITE)
+    title_font = font(19, True)
+    title_x = 784 - text_width(draw, title, title_font)
+    draw.text((max(300, title_x), 16), title, font=title_font, fill=WHITE)
 
     meta = f"{race.get('circuit', '')} • {race.get('date', '')}"
-    draw.text((22, 72), meta, font=font(15), fill=GRAY)
+    draw.text((16, 61), meta, font=font(14), fill=GRAY)
 
     if not results:
-        draw.text((22, 130), "No completed race result is available yet.", font=font(24, True), fill=BLACK)
+        draw.text(
+            (16, 120),
+            "No completed race result is available yet.",
+            font=font(24, True),
+            fill=BLACK,
+        )
         img.save(destination, "BMP")
         return
 
     podium_colors = [YELLOW, LIGHT, (217, 151, 92)]
-    card_w = 238
-    for i, row in enumerate(results[:3]):
-        x = 22 + i * 255
-        y = 104
-        draw.rounded_rectangle((x, y, x + card_w, y + 98), radius=8, fill=podium_colors[i], outline=BLACK, width=1)
-        draw.text((x + 12, y + 9), f"P{i+1}", font=font(20, True), fill=BLACK)
-        draw.text((x + 12, y + 38), row["name"][:23], font=font(18, True), fill=BLACK)
-        draw.text((x + 12, y + 66), row["constructor"][:25], font=font(13), fill=BLACK)
+    gap = 10
+    left = 16
+    card_w = (800 - (left * 2) - (gap * 2)) // 3
+    card_y = 82
+    card_h = 84
 
-    draw.text((22, 222), "TOP 10 CLASSIFICATION", font=font(19, True), fill=BLACK)
-    header_y = 248
-    draw.rectangle((22, header_y, 778, header_y + 24), fill=BLACK)
-    headers = [(30, "POS"), (85, "DRIVER"), (315, "TEAM"), (560, "TIME / STATUS"), (735, "PTS")]
+    for i, row in enumerate(results[:3]):
+        x = left + i * (card_w + gap)
+        draw.rounded_rectangle(
+            (x, card_y, x + card_w, card_y + card_h),
+            radius=7,
+            fill=podium_colors[i],
+            outline=BLACK,
+            width=1,
+        )
+        draw.text((x + 10, card_y + 7), f"P{i+1}", font=font(18, True), fill=BLACK)
+        draw.text((x + 10, card_y + 32), row["name"][:24], font=font(17, True), fill=BLACK)
+        draw.text((x + 10, card_y + 59), row["constructor"][:27], font=font(12), fill=BLACK)
+
+    draw.text((16, 176), "TOP 10 CLASSIFICATION", font=font(18, True), fill=BLACK)
+
+    header_y = 199
+    table_left = 16
+    table_right = 784
+    draw.rectangle((table_left, header_y, table_right, header_y + 24), fill=BLACK)
+
+    headers = [
+        (24, "POS"),
+        (72, "DRIVER"),
+        (326, "TEAM"),
+        (552, "TIME / STATUS"),
+        (741, "PTS"),
+    ]
     for x, label in headers:
         draw.text((x, header_y + 4), label, font=font(12, True), fill=WHITE)
 
-    row_font = font(13)
-    row_bold = font(13, True)
-    row_h = 17
+    row_font = font(14)
+    row_bold = font(14, True)
+    row_h = 22
+
     for i, row in enumerate(results[:10]):
         y = header_y + 29 + i * row_h
         if i % 2 == 0:
-            draw.rectangle((22, y - 2, 778, y + 16), fill=(248, 248, 248))
-        draw.text((34, y), str(row.get("positionText") or row.get("position", "")), font=row_bold, fill=BLACK)
-        draw.text((85, y), row["name"][:25], font=row_font, fill=BLACK)
-        draw.text((315, y), row["constructor"][:25], font=row_font, fill=BLACK)
+            draw.rectangle((table_left, y - 2, table_right, y + 19), fill=(247, 247, 247))
+
+        draw.text(
+            (26, y),
+            str(row.get("positionText") or row.get("position", "")),
+            font=row_bold,
+            fill=BLACK,
+        )
+        draw.text((72, y), row["name"][:27], font=row_font, fill=BLACK)
+        draw.text((326, y), row["constructor"][:24], font=row_font, fill=BLACK)
+
         timing = row.get("time") or row.get("status") or ""
-        draw.text((560, y), timing[:19], font=row_font, fill=BLACK)
+        draw.text((552, y), timing[:20], font=row_font, fill=BLACK)
+
         pts = fmt_points(row.get("points", 0))
-        draw.text((770 - text_width(draw, pts, row_bold), y), pts, font=row_bold, fill=BLACK)
+        draw.text((776 - text_width(draw, pts, row_bold), y), pts, font=row_bold, fill=BLACK)
 
     fastest = next((r for r in results if str(r.get("fastestRank")) == "1"), None)
+
     footer = "Source: Jolpica F1 API"
     if fastest and fastest.get("fastestLap"):
         footer = f"Fastest lap: {fastest['name']} {fastest['fastestLap']} • " + footer
-    draw.text((22, 461), footer, font=font(10), fill=GRAY)
+
+    draw.text((16, 462), footer, font=font(10), fill=GRAY)
     img.save(destination, "BMP")
 
 
 def esc(value) -> str:
     return html.escape(str(value or ""))
+
+
+
+def countdown_text(target: datetime | None, now: datetime) -> str:
+    if not target:
+        return "TBC"
+
+    seconds = int((target - now).total_seconds())
+    if seconds <= 0:
+        return "Started / completed"
+
+    days, rem = divmod(seconds, 86400)
+    hours, rem = divmod(rem, 3600)
+    minutes = rem // 60
+
+    if days:
+        return f"in {days}d {hours}h"
+    if hours:
+        return f"in {hours}h {minutes}m"
+    return f"in {minutes}m"
+
+
+def next_session_from(next_race: dict, generated_at: str | None) -> dict:
+    try:
+        now = datetime.fromisoformat(generated_at) if generated_at else datetime.now(timezone.utc)
+    except ValueError:
+        now = datetime.now(timezone.utc)
+
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=timezone.utc)
+
+    future = []
+    for session in next_race.get("sessions", []):
+        stamp = session.get("datetimeUtc")
+        if not stamp:
+            continue
+        try:
+            dt = datetime.fromisoformat(stamp)
+        except ValueError:
+            continue
+        if dt >= now:
+            future.append((dt, session))
+
+    if not future:
+        return {}
+
+    dt, session = min(future, key=lambda item: item[0])
+    return {
+        "name": session.get("name", "Next session"),
+        "local": session.get("local", "TBC"),
+        "countdown": countdown_text(dt, now),
+    }
 
 
 def build_standing_rows(rows: list[dict], driver: bool, limit: int | None = None) -> str:
@@ -415,38 +539,57 @@ def generate_homeassistant(data: dict, title: str) -> str:
     drivers = data.get("driverStandings", [])
     constructors = data.get("constructorStandings", [])
     last = data.get("lastRace", {})
-    sessions = next_race.get("sessions", [])
     results = last.get("results", [])
-
-    session_cards = "".join(
-        f"<div class='session'><span>{esc(s['name'])}</span><strong>{esc(s['local'])}</strong></div>"
-        for s in sessions
-    ) or "<p>No session schedule available.</p>"
+    next_session = next_session_from(next_race, data.get("generatedAt"))
 
     last_rows = "".join(
         f"<tr><td class='pos'>{esc(r.get('positionText') or r.get('position'))}</td>"
         f"<td><strong>{esc(r.get('name'))}</strong><span>{esc(r.get('constructor'))}</span></td>"
-        f"<td>{esc(r.get('time') or r.get('status'))}</td><td class='pts'>{esc(fmt_points(r.get('points',0)))}</td></tr>"
+        f"<td>{esc(r.get('time') or r.get('status'))}</td>"
+        f"<td class='pts'>{esc(fmt_points(r.get('points',0)))}</td></tr>"
         for r in results[:10]
     )
 
+    driver_leader = drivers[0] if drivers else {}
+    driver_p2 = drivers[1] if len(drivers) > 1 else {}
+    constructor_top = constructors[:3]
+
+    constructor_snapshot = "".join(
+        f"<div class='snapshot-row'><span>{esc(row.get('position'))}. {esc(row.get('name'))}</span>"
+        f"<strong>{esc(fmt_points(row.get('points', 0)))} pts</strong></div>"
+        for row in constructor_top
+    ) or "<div class='muted'>No constructor standings available.</div>"
+
+    next_session_html = (
+        f"<div class='next-session-name'>{esc(next_session.get('name'))}</div>"
+        f"<div class='next-session-time'>{esc(next_session.get('local'))}</div>"
+        f"<div class='countdown'>{esc(next_session.get('countdown'))}</div>"
+        if next_session
+        else "<div class='next-session-name'>Race weekend complete</div>"
+    )
+
     updated = esc(data.get("generatedLocal", ""))
+
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title>
 <style>
-:root{{--ink:#161616;--muted:#6b6b6b;--paper:#f5f5f5;--card:#fff;--line:#dedede;--accent:#c92525}}
+:root{{--ink:#161616;--muted:#6b6b6b;--paper:#f5f5f5;--card:#fff;--line:#dedede;--soft:#efefef}}
 *{{box-sizing:border-box}}body{{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}}
 main{{max-width:1180px;margin:auto;padding:18px}}header{{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:14px}}
 h1{{margin:0;font-size:28px}}.muted{{color:var(--muted);font-size:12px}}nav{{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}}
 button{{border:1px solid #222;background:#fff;padding:9px 13px;font-weight:700;cursor:pointer}}button.active{{background:#222;color:#fff}}
 .panel{{display:none}}.panel.active{{display:block}}.grid{{display:grid;grid-template-columns:1fr 1fr;gap:14px}}.card{{background:var(--card);border:1px solid var(--line);padding:14px}}
 .card h2{{margin:0 0 10px;font-size:20px}}.heroimg{{width:100%;height:auto;display:block;border:1px solid #aaa;background:#fff}}
-.sessions{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}.session{{border:1px solid var(--line);padding:10px;display:flex;justify-content:space-between;gap:12px}}
-.session span{{color:var(--muted)}}table{{width:100%;border-collapse:collapse}}th,td{{padding:8px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}}
-th{{background:#222;color:#fff}}td.pos{{width:44px;font-weight:700}}td.pts{{width:65px;text-align:right;font-weight:700}}td span{{display:block;color:var(--muted);font-size:11px;margin-top:2px}}
-.big{{font-size:25px;font-weight:800;margin:2px 0 5px}}.footer{{margin-top:14px;color:var(--muted);font-size:11px}}
-@media(max-width:760px){{.grid{{grid-template-columns:1fr}}.sessions{{grid-template-columns:1fr}}header{{display:block}}}}
+.big{{font-size:26px;font-weight:800;margin:2px 0 5px}}.status-grid{{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}}
+.status-box{{border:1px solid var(--line);background:#fafafa;padding:12px;min-height:135px}}.status-label{{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.4px}}
+.next-session-name{{font-size:20px;font-weight:800;margin-top:7px}}.next-session-time{{font-size:15px;font-weight:700;margin-top:4px}}.countdown{{display:inline-block;margin-top:8px;background:#222;color:#fff;padding:5px 8px;font-weight:700;font-size:13px}}
+.snapshot-row{{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:5px 0;font-size:13px}}.snapshot-row:last-child{{border-bottom:0}}
+.leader{{font-size:15px;font-weight:800;margin-top:7px}}.leader-sub{{color:var(--muted);font-size:12px;margin-top:3px}}.note{{margin-top:10px;padding:8px 10px;background:var(--soft);font-size:12px;color:#555}}
+table{{width:100%;border-collapse:collapse}}th,td{{padding:8px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}}th{{background:#222;color:#fff}}
+td.pos{{width:44px;font-weight:700}}td.pts{{width:65px;text-align:right;font-weight:700}}td span{{display:block;color:var(--muted);font-size:11px;margin-top:2px}}
+.footer{{margin-top:14px;color:var(--muted);font-size:11px}}
+@media(max-width:760px){{.grid{{grid-template-columns:1fr}}.status-grid{{grid-template-columns:1fr}}header{{display:block}}}}
 </style></head><body><main>
 <header><div><h1>{esc(title)}</h1><div class="muted">Static GitHub F1 dashboard for Home Assistant</div></div><div class="muted">Updated {updated}</div></header>
 <nav>
@@ -455,20 +598,66 @@ th{{background:#222;color:#fff}}td.pos{{width:44px;font-weight:700}}td.pts{{widt
 <button class="tab" data-panel="last">Last race</button>
 <button class="tab" data-panel="teams">Teams & drivers</button>
 </nav>
+
 <section id="overview" class="panel active">
-<div class="grid"><div class="card"><img class="heroimg" src="calendar.bmp" alt="F1 next-race e-paper calendar"></div>
-<div class="card"><h2>Next Grand Prix</h2><div class="big">{esc(next_race.get('name','TBC'))}</div><div class="muted">{esc(next_race.get('circuit'))} • {esc(next_race.get('location'))}</div><div style="height:12px"></div><div class="sessions">{session_cards}</div></div></div>
+<div class="grid">
+  <div class="card"><img class="heroimg" src="calendar.bmp" alt="F1 next-race e-paper calendar"></div>
+  <div class="card">
+    <h2>Next Grand Prix</h2>
+    <div class="big">{esc(next_race.get('name','TBC'))}</div>
+    <div class="muted">{esc(next_race.get('circuit'))} • {esc(next_race.get('location'))}</div>
+
+    <div class="status-grid">
+      <div class="status-box">
+        <div class="status-label">Next session</div>
+        {next_session_html}
+      </div>
+
+      <div class="status-box">
+        <div class="status-label">Driver championship</div>
+        <div class="leader">{esc(driver_leader.get('position',''))}. {esc(driver_leader.get('name','TBC'))}</div>
+        <div class="leader-sub">{esc(fmt_points(driver_leader.get('points',0)))} pts</div>
+        <div class="leader-sub" style="margin-top:8px">P2: {esc(driver_p2.get('name','TBC'))} • {esc(fmt_points(driver_p2.get('points',0)))} pts</div>
+      </div>
+
+      <div class="status-box">
+        <div class="status-label">Constructor championship</div>
+        <div style="margin-top:5px">{constructor_snapshot}</div>
+      </div>
+
+      <div class="status-box">
+        <div class="status-label">Race time</div>
+        <div class="next-session-name">{esc(next_race.get('localDateTime','TBC'))}</div>
+        <div class="note">Current weather and the previous-year circuit reference are shown in the calendar image.</div>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
+
 <section id="standings" class="panel"><div class="grid">
 <div class="card"><h2>Driver championship</h2><table><thead><tr><th>#</th><th>Driver</th><th>Pts</th></tr></thead><tbody>{build_standing_rows(drivers, True, 15)}</tbody></table></div>
 <div class="card"><h2>Constructor championship</h2><table><thead><tr><th>#</th><th>Constructor</th><th>Pts</th></tr></thead><tbody>{build_standing_rows(constructors, False)}</tbody></table></div>
 </div></section>
-<section id="last" class="panel"><div class="grid"><div class="card"><img class="heroimg" src="last-race.bmp" alt="Last race summary"></div>
-<div class="card"><h2>{esc(last.get('name','Last race'))}</h2><div class="muted">{esc(last.get('circuit'))} • {esc(last.get('date'))}</div><table><thead><tr><th>#</th><th>Driver</th><th>Time / status</th><th>Pts</th></tr></thead><tbody>{last_rows}</tbody></table></div></div></section>
+
+<section id="last" class="panel"><div class="grid">
+<div class="card"><img class="heroimg" src="last-race.bmp" alt="Last race summary"></div>
+<div class="card"><h2>{esc(last.get('name','Last race'))}</h2><div class="muted">{esc(last.get('circuit'))} • {esc(last.get('date'))}</div>
+<table><thead><tr><th>#</th><th>Driver</th><th>Time / status</th><th>Pts</th></tr></thead><tbody>{last_rows}</tbody></table></div>
+</div></section>
+
 <section id="teams" class="panel"><div class="card"><h2>Teams & drivers</h2><img class="heroimg" src="teams.bmp" alt="F1 teams and drivers"></div></section>
+
 <div class="footer">Calendar/teams imagery: InkyCloud-F1 • Standings/results: Jolpica F1 API • All session times shown in {esc(data.get('timezone'))}</div>
 </main>
-<script>document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById(b.dataset.panel).classList.add('active')}}));</script>
+<script>
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  document.getElementById(b.dataset.panel).classList.add('active');
+}}));
+</script>
 </body></html>'''
 
 
@@ -522,6 +711,7 @@ def main():
         "teams",
         etags,
     )
+    optimize_teams_bmp(OUTPUT_TEAMS)
 
     calendar_payload = fetch_json(f"{JOLPICA_BASE}/{season}.json")
     driver_payload = fetch_json(f"{JOLPICA_BASE}/{season}/driverstandings.json")
