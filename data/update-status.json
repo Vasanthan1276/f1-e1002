@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generatedAt": "2026-09-06T01:46:07.880180+00:00",
-  "generatedLocal": "Sun 06 Sep 2026, 09:46 AM",
+  "generatedAt": "2026-09-06T07:05:21.274014+00:00",
+  "generatedLocal": "Sun 06 Sep 2026, 03:05 PM",
   "season": 2026,
   "sourceState": {
-    "calendar": "unchanged",
+    "calendar": "updated",
     "teams": "unchanged"
   },
   "outputs": [
