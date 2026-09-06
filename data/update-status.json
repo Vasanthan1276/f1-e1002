@@ -1,4 +1,19 @@
 {
-  "status": "not-yet-run",
-  "message": "Run the GitHub Action once after uploading the repository files."
+  "status": "ok",
+  "generatedAt": "2026-09-06T01:25:03.441928+00:00",
+  "generatedLocal": "Sun 06 Sep 2026, 09:25 AM",
+  "season": 2026,
+  "sourceState": {
+    "calendar": "updated",
+    "teams": "updated"
+  },
+  "outputs": [
+    "calendar.bmp",
+    "teams.bmp",
+    "standings.bmp",
+    "last-race.bmp",
+    "f1-data.json",
+    "homeassistant.html",
+    "index.html"
+  ]
 }

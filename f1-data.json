@@ -1,4 +1,1480 @@
 {
-  "status": "not-yet-run",
-  "message": "Run Update F1 E1002 Static Pages once after upload."
+  "generatedAt": "2026-09-06T01:25:03.441928+00:00",
+  "generatedLocal": "Sun 06 Sep 2026, 09:25 AM",
+  "season": 2026,
+  "timezone": "Asia/Singapore",
+  "config": {
+    "language": "en",
+    "display": "spectra6",
+    "weather": true,
+    "weatherType": "current"
+  },
+  "nextRace": {
+    "round": 13,
+    "name": "Italian Grand Prix",
+    "date": "2026-09-06",
+    "datetimeUtc": "2026-09-06T13:00:00+00:00",
+    "localDateTime": "Sun 06 Sep, 09:00 PM",
+    "circuit": "Autodromo Nazionale di Monza",
+    "location": "Monza, Italy",
+    "sessions": [
+      {
+        "name": "FP1",
+        "datetimeUtc": "2026-09-04T10:30:00+00:00",
+        "local": "Fri 04 Sep, 06:30 PM"
+      },
+      {
+        "name": "FP2",
+        "datetimeUtc": "2026-09-04T14:00:00+00:00",
+        "local": "Fri 04 Sep, 10:00 PM"
+      },
+      {
+        "name": "FP3",
+        "datetimeUtc": "2026-09-05T10:30:00+00:00",
+        "local": "Sat 05 Sep, 06:30 PM"
+      },
+      {
+        "name": "Qualifying",
+        "datetimeUtc": "2026-09-05T14:00:00+00:00",
+        "local": "Sat 05 Sep, 10:00 PM"
+      },
+      {
+        "name": "Race",
+        "datetimeUtc": "2026-09-06T13:00:00+00:00",
+        "local": "Sun 06 Sep, 09:00 PM"
+      }
+    ]
+  },
+  "calendar": [
+    {
+      "round": 1,
+      "name": "Australian Grand Prix",
+      "date": "2026-03-08",
+      "datetimeUtc": "2026-03-08T04:00:00+00:00",
+      "localDateTime": "Sun 08 Mar, 12:00 PM",
+      "circuit": "Albert Park Grand Prix Circuit",
+      "location": "Melbourne, Australia",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-03-06T01:30:00+00:00",
+          "local": "Fri 06 Mar, 09:30 AM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-03-06T05:00:00+00:00",
+          "local": "Fri 06 Mar, 01:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-03-07T01:30:00+00:00",
+          "local": "Sat 07 Mar, 09:30 AM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-03-07T05:00:00+00:00",
+          "local": "Sat 07 Mar, 01:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-03-08T04:00:00+00:00",
+          "local": "Sun 08 Mar, 12:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "name": "Chinese Grand Prix",
+      "date": "2026-03-15",
+      "datetimeUtc": "2026-03-15T07:00:00+00:00",
+      "localDateTime": "Sun 15 Mar, 03:00 PM",
+      "circuit": "Shanghai International Circuit",
+      "location": "Shanghai, China",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-03-13T03:30:00+00:00",
+          "local": "Fri 13 Mar, 11:30 AM"
+        },
+        {
+          "name": "Sprint Qualifying",
+          "datetimeUtc": "2026-03-13T07:30:00+00:00",
+          "local": "Fri 13 Mar, 03:30 PM"
+        },
+        {
+          "name": "Sprint",
+          "datetimeUtc": "2026-03-14T03:00:00+00:00",
+          "local": "Sat 14 Mar, 11:00 AM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-03-14T07:00:00+00:00",
+          "local": "Sat 14 Mar, 03:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-03-15T07:00:00+00:00",
+          "local": "Sun 15 Mar, 03:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "name": "Japanese Grand Prix",
+      "date": "2026-03-29",
+      "datetimeUtc": "2026-03-29T05:00:00+00:00",
+      "localDateTime": "Sun 29 Mar, 01:00 PM",
+      "circuit": "Suzuka Circuit",
+      "location": "Suzuka, Japan",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-03-27T02:30:00+00:00",
+          "local": "Fri 27 Mar, 10:30 AM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-03-27T06:00:00+00:00",
+          "local": "Fri 27 Mar, 02:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-03-28T02:30:00+00:00",
+          "local": "Sat 28 Mar, 10:30 AM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-03-28T06:00:00+00:00",
+          "local": "Sat 28 Mar, 02:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-03-29T05:00:00+00:00",
+          "local": "Sun 29 Mar, 01:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "name": "Miami Grand Prix",
+      "date": "2026-05-03",
+      "datetimeUtc": "2026-05-03T20:00:00+00:00",
+      "localDateTime": "Mon 04 May, 04:00 AM",
+      "circuit": "Miami International Autodrome",
+      "location": "Miami, USA",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-05-01T16:00:00+00:00",
+          "local": "Sat 02 May, 12:00 AM"
+        },
+        {
+          "name": "Sprint Qualifying",
+          "datetimeUtc": "2026-05-01T20:30:00+00:00",
+          "local": "Sat 02 May, 04:30 AM"
+        },
+        {
+          "name": "Sprint",
+          "datetimeUtc": "2026-05-02T16:00:00+00:00",
+          "local": "Sun 03 May, 12:00 AM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-05-02T20:00:00+00:00",
+          "local": "Sun 03 May, 04:00 AM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-05-03T20:00:00+00:00",
+          "local": "Mon 04 May, 04:00 AM"
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "name": "Canadian Grand Prix",
+      "date": "2026-05-24",
+      "datetimeUtc": "2026-05-24T20:00:00+00:00",
+      "localDateTime": "Mon 25 May, 04:00 AM",
+      "circuit": "Circuit Gilles Villeneuve",
+      "location": "Montreal, Canada",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-05-22T16:30:00+00:00",
+          "local": "Sat 23 May, 12:30 AM"
+        },
+        {
+          "name": "Sprint Qualifying",
+          "datetimeUtc": "2026-05-22T20:30:00+00:00",
+          "local": "Sat 23 May, 04:30 AM"
+        },
+        {
+          "name": "Sprint",
+          "datetimeUtc": "2026-05-23T16:00:00+00:00",
+          "local": "Sun 24 May, 12:00 AM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-05-23T20:00:00+00:00",
+          "local": "Sun 24 May, 04:00 AM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-05-24T20:00:00+00:00",
+          "local": "Mon 25 May, 04:00 AM"
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "name": "Monaco Grand Prix",
+      "date": "2026-06-07",
+      "datetimeUtc": "2026-06-07T13:00:00+00:00",
+      "localDateTime": "Sun 07 Jun, 09:00 PM",
+      "circuit": "Circuit de Monaco",
+      "location": "Monte Carlo, Monaco",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-06-05T11:30:00+00:00",
+          "local": "Fri 05 Jun, 07:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-06-05T15:00:00+00:00",
+          "local": "Fri 05 Jun, 11:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-06-06T10:30:00+00:00",
+          "local": "Sat 06 Jun, 06:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-06-06T14:00:00+00:00",
+          "local": "Sat 06 Jun, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-06-07T13:00:00+00:00",
+          "local": "Sun 07 Jun, 09:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "name": "Barcelona Grand Prix",
+      "date": "2026-06-14",
+      "datetimeUtc": "2026-06-14T13:00:00+00:00",
+      "localDateTime": "Sun 14 Jun, 09:00 PM",
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "location": "Barcelona, Spain",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-06-12T11:30:00+00:00",
+          "local": "Fri 12 Jun, 07:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-06-12T15:00:00+00:00",
+          "local": "Fri 12 Jun, 11:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-06-13T10:30:00+00:00",
+          "local": "Sat 13 Jun, 06:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-06-13T14:00:00+00:00",
+          "local": "Sat 13 Jun, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-06-14T13:00:00+00:00",
+          "local": "Sun 14 Jun, 09:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "name": "Austrian Grand Prix",
+      "date": "2026-06-28",
+      "datetimeUtc": "2026-06-28T13:00:00+00:00",
+      "localDateTime": "Sun 28 Jun, 09:00 PM",
+      "circuit": "Red Bull Ring",
+      "location": "Spielberg, Austria",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-06-26T11:30:00+00:00",
+          "local": "Fri 26 Jun, 07:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-06-26T15:00:00+00:00",
+          "local": "Fri 26 Jun, 11:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-06-27T10:30:00+00:00",
+          "local": "Sat 27 Jun, 06:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-06-27T14:00:00+00:00",
+          "local": "Sat 27 Jun, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-06-28T13:00:00+00:00",
+          "local": "Sun 28 Jun, 09:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "name": "British Grand Prix",
+      "date": "2026-07-05",
+      "datetimeUtc": "2026-07-05T14:00:00+00:00",
+      "localDateTime": "Sun 05 Jul, 10:00 PM",
+      "circuit": "Silverstone Circuit",
+      "location": "Silverstone, UK",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-07-03T11:30:00+00:00",
+          "local": "Fri 03 Jul, 07:30 PM"
+        },
+        {
+          "name": "Sprint Qualifying",
+          "datetimeUtc": "2026-07-03T15:30:00+00:00",
+          "local": "Fri 03 Jul, 11:30 PM"
+        },
+        {
+          "name": "Sprint",
+          "datetimeUtc": "2026-07-04T11:00:00+00:00",
+          "local": "Sat 04 Jul, 07:00 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-07-04T15:00:00+00:00",
+          "local": "Sat 04 Jul, 11:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-07-05T14:00:00+00:00",
+          "local": "Sun 05 Jul, 10:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "name": "Belgian Grand Prix",
+      "date": "2026-07-19",
+      "datetimeUtc": "2026-07-19T13:00:00+00:00",
+      "localDateTime": "Sun 19 Jul, 09:00 PM",
+      "circuit": "Circuit de Spa-Francorchamps",
+      "location": "Spa, Belgium",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-07-17T11:30:00+00:00",
+          "local": "Fri 17 Jul, 07:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-07-17T15:00:00+00:00",
+          "local": "Fri 17 Jul, 11:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-07-18T10:30:00+00:00",
+          "local": "Sat 18 Jul, 06:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-07-18T14:00:00+00:00",
+          "local": "Sat 18 Jul, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-07-19T13:00:00+00:00",
+          "local": "Sun 19 Jul, 09:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "name": "Hungarian Grand Prix",
+      "date": "2026-07-26",
+      "datetimeUtc": "2026-07-26T13:00:00+00:00",
+      "localDateTime": "Sun 26 Jul, 09:00 PM",
+      "circuit": "Hungaroring",
+      "location": "Budapest, Hungary",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-07-24T11:30:00+00:00",
+          "local": "Fri 24 Jul, 07:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-07-24T15:00:00+00:00",
+          "local": "Fri 24 Jul, 11:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-07-25T10:30:00+00:00",
+          "local": "Sat 25 Jul, 06:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-07-25T14:00:00+00:00",
+          "local": "Sat 25 Jul, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-07-26T13:00:00+00:00",
+          "local": "Sun 26 Jul, 09:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "name": "Dutch Grand Prix",
+      "date": "2026-08-23",
+      "datetimeUtc": "2026-08-23T13:00:00+00:00",
+      "localDateTime": "Sun 23 Aug, 09:00 PM",
+      "circuit": "Circuit Park Zandvoort",
+      "location": "Zandvoort, Netherlands",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-08-21T10:30:00+00:00",
+          "local": "Fri 21 Aug, 06:30 PM"
+        },
+        {
+          "name": "Sprint Qualifying",
+          "datetimeUtc": "2026-08-21T14:30:00+00:00",
+          "local": "Fri 21 Aug, 10:30 PM"
+        },
+        {
+          "name": "Sprint",
+          "datetimeUtc": "2026-08-22T10:00:00+00:00",
+          "local": "Sat 22 Aug, 06:00 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-08-22T14:00:00+00:00",
+          "local": "Sat 22 Aug, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-08-23T13:00:00+00:00",
+          "local": "Sun 23 Aug, 09:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "name": "Italian Grand Prix",
+      "date": "2026-09-06",
+      "datetimeUtc": "2026-09-06T13:00:00+00:00",
+      "localDateTime": "Sun 06 Sep, 09:00 PM",
+      "circuit": "Autodromo Nazionale di Monza",
+      "location": "Monza, Italy",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-09-04T10:30:00+00:00",
+          "local": "Fri 04 Sep, 06:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-09-04T14:00:00+00:00",
+          "local": "Fri 04 Sep, 10:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-09-05T10:30:00+00:00",
+          "local": "Sat 05 Sep, 06:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-09-05T14:00:00+00:00",
+          "local": "Sat 05 Sep, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-09-06T13:00:00+00:00",
+          "local": "Sun 06 Sep, 09:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "name": "Spanish Grand Prix",
+      "date": "2026-09-13",
+      "datetimeUtc": "2026-09-13T13:00:00+00:00",
+      "localDateTime": "Sun 13 Sep, 09:00 PM",
+      "circuit": "Madring",
+      "location": "Madrid, Spain",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-09-11T11:30:00+00:00",
+          "local": "Fri 11 Sep, 07:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-09-11T15:00:00+00:00",
+          "local": "Fri 11 Sep, 11:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-09-12T10:30:00+00:00",
+          "local": "Sat 12 Sep, 06:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-09-12T14:00:00+00:00",
+          "local": "Sat 12 Sep, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-09-13T13:00:00+00:00",
+          "local": "Sun 13 Sep, 09:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "name": "Azerbaijan Grand Prix",
+      "date": "2026-09-26",
+      "datetimeUtc": "2026-09-26T11:00:00+00:00",
+      "localDateTime": "Sat 26 Sep, 07:00 PM",
+      "circuit": "Baku City Circuit",
+      "location": "Baku, Azerbaijan",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-09-24T08:30:00+00:00",
+          "local": "Thu 24 Sep, 04:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-09-24T12:00:00+00:00",
+          "local": "Thu 24 Sep, 08:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-09-25T08:30:00+00:00",
+          "local": "Fri 25 Sep, 04:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-09-25T12:00:00+00:00",
+          "local": "Fri 25 Sep, 08:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-09-26T11:00:00+00:00",
+          "local": "Sat 26 Sep, 07:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 16,
+      "name": "Bahrain Grand Prix in Malaysia",
+      "date": "2026-10-04",
+      "datetimeUtc": "2026-10-04T07:00:00+00:00",
+      "localDateTime": "Sun 04 Oct, 03:00 PM",
+      "circuit": "Sepang International Circuit",
+      "location": "Kuala Lumpur, Malaysia",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-10-02T04:30:00+00:00",
+          "local": "Fri 02 Oct, 12:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-10-02T08:00:00+00:00",
+          "local": "Fri 02 Oct, 04:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-10-03T04:30:00+00:00",
+          "local": "Sat 03 Oct, 12:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-10-03T08:00:00+00:00",
+          "local": "Sat 03 Oct, 04:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-10-04T07:00:00+00:00",
+          "local": "Sun 04 Oct, 03:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 17,
+      "name": "Singapore Grand Prix",
+      "date": "2026-10-11",
+      "datetimeUtc": "2026-10-11T12:00:00+00:00",
+      "localDateTime": "Sun 11 Oct, 08:00 PM",
+      "circuit": "Marina Bay Street Circuit",
+      "location": "Marina Bay, Singapore",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-10-09T08:30:00+00:00",
+          "local": "Fri 09 Oct, 04:30 PM"
+        },
+        {
+          "name": "Sprint Qualifying",
+          "datetimeUtc": "2026-10-09T12:30:00+00:00",
+          "local": "Fri 09 Oct, 08:30 PM"
+        },
+        {
+          "name": "Sprint",
+          "datetimeUtc": "2026-10-10T09:00:00+00:00",
+          "local": "Sat 10 Oct, 05:00 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-10-10T13:00:00+00:00",
+          "local": "Sat 10 Oct, 09:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-10-11T12:00:00+00:00",
+          "local": "Sun 11 Oct, 08:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 18,
+      "name": "United States Grand Prix",
+      "date": "2026-10-25",
+      "datetimeUtc": "2026-10-25T20:00:00+00:00",
+      "localDateTime": "Mon 26 Oct, 04:00 AM",
+      "circuit": "Circuit of the Americas",
+      "location": "Austin, USA",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-10-23T17:30:00+00:00",
+          "local": "Sat 24 Oct, 01:30 AM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-10-23T21:00:00+00:00",
+          "local": "Sat 24 Oct, 05:00 AM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-10-24T17:30:00+00:00",
+          "local": "Sun 25 Oct, 01:30 AM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-10-24T21:00:00+00:00",
+          "local": "Sun 25 Oct, 05:00 AM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-10-25T20:00:00+00:00",
+          "local": "Mon 26 Oct, 04:00 AM"
+        }
+      ]
+    },
+    {
+      "round": 19,
+      "name": "Mexico City Grand Prix",
+      "date": "2026-11-01",
+      "datetimeUtc": "2026-11-01T20:00:00+00:00",
+      "localDateTime": "Mon 02 Nov, 04:00 AM",
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "location": "Mexico City, Mexico",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-10-30T18:30:00+00:00",
+          "local": "Sat 31 Oct, 02:30 AM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-10-30T22:00:00+00:00",
+          "local": "Sat 31 Oct, 06:00 AM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-10-31T17:30:00+00:00",
+          "local": "Sun 01 Nov, 01:30 AM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-10-31T21:00:00+00:00",
+          "local": "Sun 01 Nov, 05:00 AM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-11-01T20:00:00+00:00",
+          "local": "Mon 02 Nov, 04:00 AM"
+        }
+      ]
+    },
+    {
+      "round": 20,
+      "name": "Brazilian Grand Prix",
+      "date": "2026-11-08",
+      "datetimeUtc": "2026-11-08T17:00:00+00:00",
+      "localDateTime": "Mon 09 Nov, 01:00 AM",
+      "circuit": "Autódromo José Carlos Pace",
+      "location": "São Paulo, Brazil",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-11-06T15:30:00+00:00",
+          "local": "Fri 06 Nov, 11:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-11-06T19:00:00+00:00",
+          "local": "Sat 07 Nov, 03:00 AM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-11-07T14:30:00+00:00",
+          "local": "Sat 07 Nov, 10:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-11-07T18:00:00+00:00",
+          "local": "Sun 08 Nov, 02:00 AM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-11-08T17:00:00+00:00",
+          "local": "Mon 09 Nov, 01:00 AM"
+        }
+      ]
+    },
+    {
+      "round": 21,
+      "name": "Las Vegas Grand Prix",
+      "date": "2026-11-22",
+      "datetimeUtc": "2026-11-22T04:00:00+00:00",
+      "localDateTime": "Sun 22 Nov, 12:00 PM",
+      "circuit": "Las Vegas Strip Street Circuit",
+      "location": "Las Vegas, USA",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-11-20T00:30:00+00:00",
+          "local": "Fri 20 Nov, 08:30 AM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-11-20T04:00:00+00:00",
+          "local": "Fri 20 Nov, 12:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-11-21T00:30:00+00:00",
+          "local": "Sat 21 Nov, 08:30 AM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-11-21T04:00:00+00:00",
+          "local": "Sat 21 Nov, 12:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-11-22T04:00:00+00:00",
+          "local": "Sun 22 Nov, 12:00 PM"
+        }
+      ]
+    },
+    {
+      "round": 22,
+      "name": "Qatar Grand Prix",
+      "date": "2026-11-29",
+      "datetimeUtc": "2026-11-29T16:00:00+00:00",
+      "localDateTime": "Mon 30 Nov, 12:00 AM",
+      "circuit": "Losail International Circuit",
+      "location": "Lusail, Qatar",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-11-27T13:30:00+00:00",
+          "local": "Fri 27 Nov, 09:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-11-27T17:00:00+00:00",
+          "local": "Sat 28 Nov, 01:00 AM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-11-28T14:30:00+00:00",
+          "local": "Sat 28 Nov, 10:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-11-28T18:00:00+00:00",
+          "local": "Sun 29 Nov, 02:00 AM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-11-29T16:00:00+00:00",
+          "local": "Mon 30 Nov, 12:00 AM"
+        }
+      ]
+    },
+    {
+      "round": 23,
+      "name": "Abu Dhabi Grand Prix",
+      "date": "2026-12-06",
+      "datetimeUtc": "2026-12-06T13:00:00+00:00",
+      "localDateTime": "Sun 06 Dec, 09:00 PM",
+      "circuit": "Yas Marina Circuit",
+      "location": "Abu Dhabi, UAE",
+      "sessions": [
+        {
+          "name": "FP1",
+          "datetimeUtc": "2026-12-04T09:30:00+00:00",
+          "local": "Fri 04 Dec, 05:30 PM"
+        },
+        {
+          "name": "FP2",
+          "datetimeUtc": "2026-12-04T13:00:00+00:00",
+          "local": "Fri 04 Dec, 09:00 PM"
+        },
+        {
+          "name": "FP3",
+          "datetimeUtc": "2026-12-05T10:30:00+00:00",
+          "local": "Sat 05 Dec, 06:30 PM"
+        },
+        {
+          "name": "Qualifying",
+          "datetimeUtc": "2026-12-05T14:00:00+00:00",
+          "local": "Sat 05 Dec, 10:00 PM"
+        },
+        {
+          "name": "Race",
+          "datetimeUtc": "2026-12-06T13:00:00+00:00",
+          "local": "Sun 06 Dec, 09:00 PM"
+        }
+      ]
+    }
+  ],
+  "driverStandings": [
+    {
+      "position": 1,
+      "points": 242.0,
+      "wins": 6,
+      "code": "ANT",
+      "givenName": "Andrea Kimi",
+      "familyName": "Antonelli",
+      "name": "Andrea Kimi Antonelli",
+      "constructor": "Mercedes"
+    },
+    {
+      "position": 2,
+      "points": 183.0,
+      "wins": 2,
+      "code": "RUS",
+      "givenName": "George",
+      "familyName": "Russell",
+      "name": "George Russell",
+      "constructor": "Mercedes"
+    },
+    {
+      "position": 3,
+      "points": 183.0,
+      "wins": 1,
+      "code": "HAM",
+      "givenName": "Lewis",
+      "familyName": "Hamilton",
+      "name": "Lewis Hamilton",
+      "constructor": "Ferrari"
+    },
+    {
+      "position": 4,
+      "points": 159.0,
+      "wins": 2,
+      "code": "NOR",
+      "givenName": "Lando",
+      "familyName": "Norris",
+      "name": "Lando Norris",
+      "constructor": "McLaren"
+    },
+    {
+      "position": 5,
+      "points": 155.0,
+      "wins": 1,
+      "code": "LEC",
+      "givenName": "Charles",
+      "familyName": "Leclerc",
+      "name": "Charles Leclerc",
+      "constructor": "Ferrari"
+    },
+    {
+      "position": 6,
+      "points": 112.0,
+      "wins": 0,
+      "code": "VER",
+      "givenName": "Max",
+      "familyName": "Verstappen",
+      "name": "Max Verstappen",
+      "constructor": "Red Bull"
+    },
+    {
+      "position": 7,
+      "points": 104.0,
+      "wins": 0,
+      "code": "PIA",
+      "givenName": "Oscar",
+      "familyName": "Piastri",
+      "name": "Oscar Piastri",
+      "constructor": "McLaren"
+    },
+    {
+      "position": 8,
+      "points": 68.0,
+      "wins": 0,
+      "code": "HAD",
+      "givenName": "Isack",
+      "familyName": "Hadjar",
+      "name": "Isack Hadjar",
+      "constructor": "Red Bull"
+    },
+    {
+      "position": 9,
+      "points": 49.0,
+      "wins": 0,
+      "code": "LAW",
+      "givenName": "Liam",
+      "familyName": "Lawson",
+      "name": "Liam Lawson",
+      "constructor": "RB F1 Team"
+    },
+    {
+      "position": 10,
+      "points": 44.0,
+      "wins": 0,
+      "code": "GAS",
+      "givenName": "Pierre",
+      "familyName": "Gasly",
+      "name": "Pierre Gasly",
+      "constructor": "Alpine F1 Team"
+    },
+    {
+      "position": 11,
+      "points": 23.0,
+      "wins": 0,
+      "code": "LIN",
+      "givenName": "Arvid",
+      "familyName": "Lindblad",
+      "name": "Arvid Lindblad",
+      "constructor": "RB F1 Team"
+    },
+    {
+      "position": 12,
+      "points": 19.0,
+      "wins": 0,
+      "code": "COL",
+      "givenName": "Franco",
+      "familyName": "Colapinto",
+      "name": "Franco Colapinto",
+      "constructor": "Alpine F1 Team"
+    },
+    {
+      "position": 13,
+      "points": 18.0,
+      "wins": 0,
+      "code": "BEA",
+      "givenName": "Oliver",
+      "familyName": "Bearman",
+      "name": "Oliver Bearman",
+      "constructor": "Haas F1 Team"
+    },
+    {
+      "position": 14,
+      "points": 10.0,
+      "wins": 0,
+      "code": "BOR",
+      "givenName": "Gabriel",
+      "familyName": "Bortoleto",
+      "name": "Gabriel Bortoleto",
+      "constructor": "Audi"
+    },
+    {
+      "position": 15,
+      "points": 6.0,
+      "wins": 0,
+      "code": "HUL",
+      "givenName": "Nico",
+      "familyName": "Hülkenberg",
+      "name": "Nico Hülkenberg",
+      "constructor": "Audi"
+    },
+    {
+      "position": 16,
+      "points": 6.0,
+      "wins": 0,
+      "code": "SAI",
+      "givenName": "Carlos",
+      "familyName": "Sainz",
+      "name": "Carlos Sainz",
+      "constructor": "Williams"
+    },
+    {
+      "position": 17,
+      "points": 5.0,
+      "wins": 0,
+      "code": "ALB",
+      "givenName": "Alexander",
+      "familyName": "Albon",
+      "name": "Alexander Albon",
+      "constructor": "Williams"
+    },
+    {
+      "position": 18,
+      "points": 3.0,
+      "wins": 0,
+      "code": "OCO",
+      "givenName": "Esteban",
+      "familyName": "Ocon",
+      "name": "Esteban Ocon",
+      "constructor": "Haas F1 Team"
+    },
+    {
+      "position": 19,
+      "points": 3.0,
+      "wins": 0,
+      "code": "ALO",
+      "givenName": "Fernando",
+      "familyName": "Alonso",
+      "name": "Fernando Alonso",
+      "constructor": "Aston Martin"
+    },
+    {
+      "position": 20,
+      "points": 0.0,
+      "wins": 0,
+      "code": "TSU",
+      "givenName": "Yuki",
+      "familyName": "Tsunoda",
+      "name": "Yuki Tsunoda",
+      "constructor": "RB F1 Team"
+    },
+    {
+      "position": 21,
+      "points": 0.0,
+      "wins": 0,
+      "code": "STR",
+      "givenName": "Lance",
+      "familyName": "Stroll",
+      "name": "Lance Stroll",
+      "constructor": "Aston Martin"
+    },
+    {
+      "position": 22,
+      "points": 0.0,
+      "wins": 0,
+      "code": "BOT",
+      "givenName": "Valtteri",
+      "familyName": "Bottas",
+      "name": "Valtteri Bottas",
+      "constructor": "Cadillac F1 Team"
+    },
+    {
+      "position": 23,
+      "points": 0.0,
+      "wins": 0,
+      "code": "PER",
+      "givenName": "Sergio",
+      "familyName": "Pérez",
+      "name": "Sergio Pérez",
+      "constructor": "Cadillac F1 Team"
+    }
+  ],
+  "constructorStandings": [
+    {
+      "position": 1,
+      "points": 425.0,
+      "wins": 8,
+      "name": "Mercedes"
+    },
+    {
+      "position": 2,
+      "points": 338.0,
+      "wins": 2,
+      "name": "Ferrari"
+    },
+    {
+      "position": 3,
+      "points": 263.0,
+      "wins": 2,
+      "name": "McLaren"
+    },
+    {
+      "position": 4,
+      "points": 186.0,
+      "wins": 0,
+      "name": "Red Bull"
+    },
+    {
+      "position": 5,
+      "points": 66.0,
+      "wins": 0,
+      "name": "RB F1 Team"
+    },
+    {
+      "position": 6,
+      "points": 63.0,
+      "wins": 0,
+      "name": "Alpine F1 Team"
+    },
+    {
+      "position": 7,
+      "points": 21.0,
+      "wins": 0,
+      "name": "Haas F1 Team"
+    },
+    {
+      "position": 8,
+      "points": 16.0,
+      "wins": 0,
+      "name": "Audi"
+    },
+    {
+      "position": 9,
+      "points": 11.0,
+      "wins": 0,
+      "name": "Williams"
+    },
+    {
+      "position": 10,
+      "points": 3.0,
+      "wins": 0,
+      "name": "Aston Martin"
+    },
+    {
+      "position": 11,
+      "points": 0.0,
+      "wins": 0,
+      "name": "Cadillac F1 Team"
+    }
+  ],
+  "lastRace": {
+    "season": "2026",
+    "round": "12",
+    "name": "Dutch Grand Prix",
+    "date": "2026-08-23",
+    "time": "13:00:00Z",
+    "circuit": "Circuit Park Zandvoort",
+    "location": "Zandvoort, Netherlands",
+    "results": [
+      {
+        "position": 1,
+        "positionText": "1",
+        "points": 25.0,
+        "code": "NOR",
+        "name": "Lando Norris",
+        "familyName": "Norris",
+        "constructor": "McLaren",
+        "status": "Finished",
+        "time": "2:04:44.859",
+        "fastestRank": "3",
+        "fastestLap": "1:14.321"
+      },
+      {
+        "position": 2,
+        "positionText": "2",
+        "points": 18.0,
+        "code": "ANT",
+        "name": "Andrea Kimi Antonelli",
+        "familyName": "Antonelli",
+        "constructor": "Mercedes",
+        "status": "Finished",
+        "time": "+11.536",
+        "fastestRank": "5",
+        "fastestLap": "1:14.571"
+      },
+      {
+        "position": 3,
+        "positionText": "3",
+        "points": 15.0,
+        "code": "RUS",
+        "name": "George Russell",
+        "familyName": "Russell",
+        "constructor": "Mercedes",
+        "status": "Finished",
+        "time": "+15.906",
+        "fastestRank": "6",
+        "fastestLap": "1:15.393"
+      },
+      {
+        "position": 4,
+        "positionText": "4",
+        "points": 12.0,
+        "code": "HAM",
+        "name": "Lewis Hamilton",
+        "familyName": "Hamilton",
+        "constructor": "Ferrari",
+        "status": "Finished",
+        "time": "+16.755",
+        "fastestRank": "4",
+        "fastestLap": "1:14.566"
+      },
+      {
+        "position": 5,
+        "positionText": "5",
+        "points": 10.0,
+        "code": "LEC",
+        "name": "Charles Leclerc",
+        "familyName": "Leclerc",
+        "constructor": "Ferrari",
+        "status": "Finished",
+        "time": "+17.258",
+        "fastestRank": "1",
+        "fastestLap": "1:14.230"
+      },
+      {
+        "position": 6,
+        "positionText": "6",
+        "points": 8.0,
+        "code": "PIA",
+        "name": "Oscar Piastri",
+        "familyName": "Piastri",
+        "constructor": "McLaren",
+        "status": "Finished",
+        "time": "+32.332",
+        "fastestRank": "2",
+        "fastestLap": "1:14.303"
+      },
+      {
+        "position": 7,
+        "positionText": "7",
+        "points": 6.0,
+        "code": "LAW",
+        "name": "Liam Lawson",
+        "familyName": "Lawson",
+        "constructor": "Red Bull",
+        "status": "Finished",
+        "time": "+1:19.915",
+        "fastestRank": "7",
+        "fastestLap": "1:15.435"
+      },
+      {
+        "position": 8,
+        "positionText": "8",
+        "points": 4.0,
+        "code": "HUL",
+        "name": "Nico Hülkenberg",
+        "familyName": "Hülkenberg",
+        "constructor": "Audi",
+        "status": "Lapped",
+        "time": "+36.049",
+        "fastestRank": "10",
+        "fastestLap": "1:16.048"
+      },
+      {
+        "position": 9,
+        "positionText": "9",
+        "points": 2.0,
+        "code": "ALO",
+        "name": "Fernando Alonso",
+        "familyName": "Alonso",
+        "constructor": "Aston Martin",
+        "status": "Lapped",
+        "time": "+48.393",
+        "fastestRank": "14",
+        "fastestLap": "1:16.946"
+      },
+      {
+        "position": 10,
+        "positionText": "10",
+        "points": 1.0,
+        "code": "GAS",
+        "name": "Pierre Gasly",
+        "familyName": "Gasly",
+        "constructor": "Alpine F1 Team",
+        "status": "Lapped",
+        "time": "+49.640",
+        "fastestRank": "11",
+        "fastestLap": "1:16.220"
+      },
+      {
+        "position": 11,
+        "positionText": "11",
+        "points": 0.0,
+        "code": "TSU",
+        "name": "Yuki Tsunoda",
+        "familyName": "Tsunoda",
+        "constructor": "RB F1 Team",
+        "status": "Lapped",
+        "time": "+54.322",
+        "fastestRank": "12",
+        "fastestLap": "1:16.639"
+      },
+      {
+        "position": 12,
+        "positionText": "12",
+        "points": 0.0,
+        "code": "LIN",
+        "name": "Arvid Lindblad",
+        "familyName": "Lindblad",
+        "constructor": "RB F1 Team",
+        "status": "Lapped",
+        "time": "+1:05.680",
+        "fastestRank": "13",
+        "fastestLap": "1:16.653"
+      },
+      {
+        "position": 13,
+        "positionText": "13",
+        "points": 0.0,
+        "code": "BOR",
+        "name": "Gabriel Bortoleto",
+        "familyName": "Bortoleto",
+        "constructor": "Audi",
+        "status": "Lapped",
+        "time": "+1:06.235",
+        "fastestRank": "8",
+        "fastestLap": "1:15.515"
+      },
+      {
+        "position": 14,
+        "positionText": "14",
+        "points": 0.0,
+        "code": "COL",
+        "name": "Franco Colapinto",
+        "familyName": "Colapinto",
+        "constructor": "Alpine F1 Team",
+        "status": "Lapped",
+        "time": "+20.534",
+        "fastestRank": "9",
+        "fastestLap": "1:15.578"
+      },
+      {
+        "position": 15,
+        "positionText": "15",
+        "points": 0.0,
+        "code": "PER",
+        "name": "Sergio Pérez",
+        "familyName": "Pérez",
+        "constructor": "Cadillac F1 Team",
+        "status": "Lapped",
+        "time": "+58.582",
+        "fastestRank": "17",
+        "fastestLap": "1:17.523"
+      },
+      {
+        "position": 16,
+        "positionText": "16",
+        "points": 0.0,
+        "code": "SAI",
+        "name": "Carlos Sainz",
+        "familyName": "Sainz",
+        "constructor": "Williams",
+        "status": "Lapped",
+        "time": "+1:10.271",
+        "fastestRank": "16",
+        "fastestLap": "1:17.328"
+      },
+      {
+        "position": 17,
+        "positionText": "17",
+        "points": 0.0,
+        "code": "ALB",
+        "name": "Alexander Albon",
+        "familyName": "Albon",
+        "constructor": "Williams",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": "15",
+        "fastestLap": "1:17.147"
+      },
+      {
+        "position": 18,
+        "positionText": "R",
+        "points": 0.0,
+        "code": "BOT",
+        "name": "Valtteri Bottas",
+        "familyName": "Bottas",
+        "constructor": "Cadillac F1 Team",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": "19",
+        "fastestLap": "1:17.822"
+      },
+      {
+        "position": 19,
+        "positionText": "R",
+        "points": 0.0,
+        "code": "OCO",
+        "name": "Esteban Ocon",
+        "familyName": "Ocon",
+        "constructor": "Haas F1 Team",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": "18",
+        "fastestLap": "1:17.588"
+      },
+      {
+        "position": 20,
+        "positionText": "R",
+        "points": 0.0,
+        "code": "STR",
+        "name": "Lance Stroll",
+        "familyName": "Stroll",
+        "constructor": "Aston Martin",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": "20",
+        "fastestLap": "1:17.883"
+      },
+      {
+        "position": 21,
+        "positionText": "R",
+        "points": 0.0,
+        "code": "BEA",
+        "name": "Oliver Bearman",
+        "familyName": "Bearman",
+        "constructor": "Haas F1 Team",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": null,
+        "fastestLap": ""
+      },
+      {
+        "position": 22,
+        "positionText": "R",
+        "points": 0.0,
+        "code": "VER",
+        "name": "Max Verstappen",
+        "familyName": "Verstappen",
+        "constructor": "Red Bull",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": null,
+        "fastestLap": ""
+      }
+    ]
+  },
+  "sources": {
+    "calendarImage": "https://f1.inkycloud.click/calendar.bmp",
+    "teamsImage": "https://f1.inkycloud.click/teams.bmp",
+    "raceData": "Jolpica F1 API"
+  }
 }
