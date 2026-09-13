@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T11:42:49.931939+00:00",
-  "generatedLocal": "Sun 13 Sep 2026, 07:42 PM",
+  "generatedAt": "2026-09-13T16:11:05.432882+00:00",
+  "generatedLocal": "Mon 14 Sep 2026, 12:11 AM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -10,38 +10,38 @@
     "weatherType": "current"
   },
   "nextRace": {
-    "round": 14,
-    "name": "Spanish Grand Prix",
-    "date": "2026-09-13",
-    "datetimeUtc": "2026-09-13T13:00:00+00:00",
-    "localDateTime": "Sun 13 Sep, 09:00 PM",
-    "circuit": "Madring",
-    "location": "Madrid, Spain",
+    "round": 15,
+    "name": "Azerbaijan Grand Prix",
+    "date": "2026-09-26",
+    "datetimeUtc": "2026-09-26T11:00:00+00:00",
+    "localDateTime": "Sat 26 Sep, 07:00 PM",
+    "circuit": "Baku City Circuit",
+    "location": "Baku, Azerbaijan",
     "sessions": [
       {
         "name": "FP1",
-        "datetimeUtc": "2026-09-11T11:30:00+00:00",
-        "local": "Fri 11 Sep, 07:30 PM"
+        "datetimeUtc": "2026-09-24T08:30:00+00:00",
+        "local": "Thu 24 Sep, 04:30 PM"
       },
       {
         "name": "FP2",
-        "datetimeUtc": "2026-09-11T15:00:00+00:00",
-        "local": "Fri 11 Sep, 11:00 PM"
+        "datetimeUtc": "2026-09-24T12:00:00+00:00",
+        "local": "Thu 24 Sep, 08:00 PM"
       },
       {
         "name": "FP3",
-        "datetimeUtc": "2026-09-12T10:30:00+00:00",
-        "local": "Sat 12 Sep, 06:30 PM"
+        "datetimeUtc": "2026-09-25T08:30:00+00:00",
+        "local": "Fri 25 Sep, 04:30 PM"
       },
       {
         "name": "Qualifying",
-        "datetimeUtc": "2026-09-12T14:00:00+00:00",
-        "local": "Sat 12 Sep, 10:00 PM"
+        "datetimeUtc": "2026-09-25T12:00:00+00:00",
+        "local": "Fri 25 Sep, 08:00 PM"
       },
       {
         "name": "Race",
-        "datetimeUtc": "2026-09-13T13:00:00+00:00",
-        "local": "Sun 13 Sep, 09:00 PM"
+        "datetimeUtc": "2026-09-26T11:00:00+00:00",
+        "local": "Sat 26 Sep, 07:00 PM"
       }
     ]
   },
