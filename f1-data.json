@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-26T13:00:51.306017+00:00",
-  "generatedLocal": "Sat 26 Sep 2026, 09:00 PM",
+  "generatedAt": "2026-09-26T17:06:30.906597+00:00",
+  "generatedLocal": "Sun 27 Sep 2026, 01:06 AM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -878,7 +878,7 @@
   "driverStandings": [
     {
       "position": 1,
-      "points": 292.0,
+      "points": 302.0,
       "wins": 8,
       "code": "ANT",
       "givenName": "Andrea Kimi",
@@ -888,8 +888,8 @@
     },
     {
       "position": 2,
-      "points": 211.0,
-      "wins": 2,
+      "points": 236.0,
+      "wins": 3,
       "code": "RUS",
       "givenName": "George",
       "familyName": "Russell",
@@ -898,7 +898,7 @@
     },
     {
       "position": 3,
-      "points": 191.0,
+      "points": 199.0,
       "wins": 1,
       "code": "HAM",
       "givenName": "Lewis",
@@ -918,7 +918,7 @@
     },
     {
       "position": 5,
-      "points": 167.0,
+      "points": 179.0,
       "wins": 1,
       "code": "LEC",
       "givenName": "Charles",
@@ -928,7 +928,7 @@
     },
     {
       "position": 6,
-      "points": 145.0,
+      "points": 163.0,
       "wins": 0,
       "code": "VER",
       "givenName": "Max",
@@ -948,7 +948,7 @@
     },
     {
       "position": 8,
-      "points": 71.0,
+      "points": 86.0,
       "wins": 0,
       "code": "HAD",
       "givenName": "Isack",
@@ -978,7 +978,7 @@
     },
     {
       "position": 11,
-      "points": 31.0,
+      "points": 37.0,
       "wins": 0,
       "code": "LIN",
       "givenName": "Arvid",
@@ -998,7 +998,7 @@
     },
     {
       "position": 13,
-      "points": 18.0,
+      "points": 20.0,
       "wins": 0,
       "code": "BEA",
       "givenName": "Oliver",
@@ -1028,7 +1028,17 @@
     },
     {
       "position": 16,
-      "points": 6.0,
+      "points": 7.0,
+      "wins": 0,
+      "code": "OCO",
+      "givenName": "Esteban",
+      "familyName": "Ocon",
+      "name": "Esteban Ocon",
+      "constructor": "Haas F1 Team"
+    },
+    {
+      "position": 17,
+      "points": 7.0,
       "wins": 0,
       "code": "SAI",
       "givenName": "Carlos",
@@ -1037,7 +1047,7 @@
       "constructor": "Williams"
     },
     {
-      "position": 17,
+      "position": 18,
       "points": 5.0,
       "wins": 0,
       "code": "ALB",
@@ -1045,16 +1055,6 @@
       "familyName": "Albon",
       "name": "Alexander Albon",
       "constructor": "Williams"
-    },
-    {
-      "position": 18,
-      "points": 3.0,
-      "wins": 0,
-      "code": "OCO",
-      "givenName": "Esteban",
-      "familyName": "Ocon",
-      "name": "Esteban Ocon",
-      "constructor": "Haas F1 Team"
     },
     {
       "position": 19,
@@ -1110,13 +1110,13 @@
   "constructorStandings": [
     {
       "position": 1,
-      "points": 503.0,
-      "wins": 10,
+      "points": 538.0,
+      "wins": 11,
       "name": "Mercedes"
     },
     {
       "position": 2,
-      "points": 358.0,
+      "points": 378.0,
       "wins": 2,
       "name": "Ferrari"
     },
@@ -1128,13 +1128,13 @@
     },
     {
       "position": 4,
-      "points": 230.0,
+      "points": 263.0,
       "wins": 0,
       "name": "Red Bull"
     },
     {
       "position": 5,
-      "points": 77.0,
+      "points": 83.0,
       "wins": 0,
       "name": "RB F1 Team"
     },
@@ -1146,7 +1146,7 @@
     },
     {
       "position": 7,
-      "points": 21.0,
+      "points": 27.0,
       "wins": 0,
       "name": "Haas F1 Team"
     },
@@ -1158,7 +1158,7 @@
     },
     {
       "position": 9,
-      "points": 11.0,
+      "points": 12.0,
       "wins": 0,
       "name": "Williams"
     },
@@ -1177,25 +1177,25 @@
   ],
   "lastRace": {
     "season": "2026",
-    "round": "14",
-    "name": "Spanish Grand Prix",
-    "date": "2026-09-13",
-    "time": "13:00:00Z",
-    "circuit": "Madring",
-    "location": "Madrid, Spain",
+    "round": "15",
+    "name": "Azerbaijan Grand Prix",
+    "date": "2026-09-26",
+    "time": "11:00:00Z",
+    "circuit": "Baku City Circuit",
+    "location": "Baku, Azerbaijan",
     "results": [
       {
         "position": 1,
         "positionText": "1",
         "points": 25.0,
-        "code": "ANT",
-        "name": "Andrea Kimi Antonelli",
-        "familyName": "Antonelli",
+        "code": "RUS",
+        "name": "George Russell",
+        "familyName": "Russell",
         "constructor": "Mercedes",
         "status": "Finished",
-        "time": "1:34:23.754",
-        "fastestRank": "2",
-        "fastestLap": "1:36.030"
+        "time": "1:38:02.143",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 2,
@@ -1206,22 +1206,22 @@
         "familyName": "Verstappen",
         "constructor": "Red Bull",
         "status": "Finished",
-        "time": "+4.351",
-        "fastestRank": "5",
-        "fastestLap": "1:36.760"
+        "time": "+0.196",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 3,
         "positionText": "3",
         "points": 15.0,
-        "code": "NOR",
-        "name": "Lando Norris",
-        "familyName": "Norris",
-        "constructor": "McLaren",
+        "code": "HAD",
+        "name": "Isack Hadjar",
+        "familyName": "Hadjar",
+        "constructor": "Red Bull",
         "status": "Finished",
-        "time": "+5.089",
-        "fastestRank": "4",
-        "fastestLap": "1:36.680"
+        "time": "+10.704",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 4,
@@ -1232,113 +1232,113 @@
         "familyName": "Leclerc",
         "constructor": "Ferrari",
         "status": "Finished",
-        "time": "+29.116",
-        "fastestRank": "3",
-        "fastestLap": "1:36.063"
+        "time": "+14.136",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 5,
         "positionText": "5",
         "points": 10.0,
-        "code": "RUS",
-        "name": "George Russell",
-        "familyName": "Russell",
+        "code": "ANT",
+        "name": "Andrea Kimi Antonelli",
+        "familyName": "Antonelli",
         "constructor": "Mercedes",
         "status": "Finished",
-        "time": "+29.829",
-        "fastestRank": "1",
-        "fastestLap": "1:35.587"
+        "time": "+14.512",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 6,
         "positionText": "6",
         "points": 8.0,
-        "code": "LAW",
-        "name": "Liam Lawson",
-        "familyName": "Lawson",
-        "constructor": "Red Bull",
+        "code": "HAM",
+        "name": "Lewis Hamilton",
+        "familyName": "Hamilton",
+        "constructor": "Ferrari",
         "status": "Finished",
-        "time": "+1:26.746",
-        "fastestRank": "6",
-        "fastestLap": "1:36.846"
+        "time": "+22.382",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 7,
         "positionText": "7",
         "points": 6.0,
-        "code": "COL",
-        "name": "Franco Colapinto",
-        "familyName": "Colapinto",
-        "constructor": "Alpine F1 Team",
+        "code": "LIN",
+        "name": "Arvid Lindblad",
+        "familyName": "Lindblad",
+        "constructor": "RB F1 Team",
         "status": "Finished",
-        "time": "+1:34.281",
-        "fastestRank": "9",
-        "fastestLap": "1:37.321"
+        "time": "+31.159",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 8,
         "positionText": "8",
         "points": 4.0,
-        "code": "PIA",
-        "name": "Oscar Piastri",
-        "familyName": "Piastri",
-        "constructor": "McLaren",
+        "code": "OCO",
+        "name": "Esteban Ocon",
+        "familyName": "Ocon",
+        "constructor": "Haas F1 Team",
         "status": "Finished",
-        "time": "+1:35.839",
-        "fastestRank": "7",
-        "fastestLap": "1:37.226"
+        "time": "+31.189",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 9,
         "positionText": "9",
         "points": 2.0,
-        "code": "LIN",
-        "name": "Arvid Lindblad",
-        "familyName": "Lindblad",
-        "constructor": "RB F1 Team",
-        "status": "Lapped",
-        "time": "+10.408",
-        "fastestRank": "14",
-        "fastestLap": "1:38.211"
+        "code": "BEA",
+        "name": "Oliver Bearman",
+        "familyName": "Bearman",
+        "constructor": "Haas F1 Team",
+        "status": "Finished",
+        "time": "+31.929",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 10,
         "positionText": "10",
         "points": 1.0,
-        "code": "HUL",
-        "name": "Nico Hülkenberg",
-        "familyName": "Hülkenberg",
-        "constructor": "Audi",
-        "status": "Lapped",
-        "time": "+11.298",
-        "fastestRank": "11",
-        "fastestLap": "1:38.114"
+        "code": "SAI",
+        "name": "Carlos Sainz",
+        "familyName": "Sainz",
+        "constructor": "Williams",
+        "status": "Finished",
+        "time": "+32.416",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 11,
         "positionText": "11",
         "points": 0.0,
-        "code": "OCO",
-        "name": "Esteban Ocon",
-        "familyName": "Ocon",
-        "constructor": "Haas F1 Team",
-        "status": "Lapped",
-        "time": "+15.143",
-        "fastestRank": "12",
-        "fastestLap": "1:38.119"
+        "code": "HUL",
+        "name": "Nico Hülkenberg",
+        "familyName": "Hülkenberg",
+        "constructor": "Audi",
+        "status": "Finished",
+        "time": "+33.231",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 12,
         "positionText": "12",
         "points": 0.0,
-        "code": "GAS",
-        "name": "Pierre Gasly",
-        "familyName": "Gasly",
-        "constructor": "Alpine F1 Team",
-        "status": "Lapped",
-        "time": "+26.152",
-        "fastestRank": "13",
-        "fastestLap": "1:38.141"
+        "code": "LAW",
+        "name": "Liam Lawson",
+        "familyName": "Lawson",
+        "constructor": "RB F1 Team",
+        "status": "Finished",
+        "time": "+34.013",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 13,
@@ -1348,104 +1348,117 @@
         "name": "Gabriel Bortoleto",
         "familyName": "Bortoleto",
         "constructor": "Audi",
-        "status": "Lapped",
-        "time": "+28.389",
-        "fastestRank": "10",
-        "fastestLap": "1:37.837"
+        "status": "Finished",
+        "time": "+34.230",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 14,
         "positionText": "14",
         "points": 0.0,
-        "code": "TSU",
-        "name": "Yuki Tsunoda",
-        "familyName": "Tsunoda",
-        "constructor": "RB F1 Team",
-        "status": "Lapped",
-        "time": "+1:00.163",
-        "fastestRank": "15",
-        "fastestLap": "1:38.396"
+        "code": "PIA",
+        "name": "Oscar Piastri",
+        "familyName": "Piastri",
+        "constructor": "McLaren",
+        "status": "Finished",
+        "time": "+36.401",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 15,
         "positionText": "15",
         "points": 0.0,
-        "code": "ALB",
-        "name": "Alexander Albon",
-        "familyName": "Albon",
-        "constructor": "Williams",
-        "status": "Lapped",
-        "time": "+1:26.212",
-        "fastestRank": "18",
-        "fastestLap": "1:39.397"
+        "code": "PER",
+        "name": "Sergio Pérez",
+        "familyName": "Pérez",
+        "constructor": "Cadillac F1 Team",
+        "status": "Finished",
+        "time": "+41.400",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 16,
         "positionText": "16",
         "points": 0.0,
-        "code": "BEA",
-        "name": "Oliver Bearman",
-        "familyName": "Bearman",
-        "constructor": "Haas F1 Team",
-        "status": "Lapped",
-        "time": "+1:29.963",
-        "fastestRank": "8",
-        "fastestLap": "1:37.308"
-      },
-      {
-        "position": 17,
-        "positionText": "17",
-        "points": 0.0,
-        "code": "ALO",
-        "name": "Fernando Alonso",
-        "familyName": "Alonso",
-        "constructor": "Aston Martin",
-        "status": "Lapped",
-        "time": "+33.776",
-        "fastestRank": "16",
-        "fastestLap": "1:39.003"
-      },
-      {
-        "position": 18,
-        "positionText": "18",
-        "points": 0.0,
         "code": "BOT",
         "name": "Valtteri Bottas",
         "familyName": "Bottas",
         "constructor": "Cadillac F1 Team",
-        "status": "Lapped",
-        "time": "+49.246",
-        "fastestRank": "17",
-        "fastestLap": "1:39.130"
+        "status": "Retired",
+        "time": "",
+        "fastestRank": null,
+        "fastestLap": ""
+      },
+      {
+        "position": 17,
+        "positionText": "R",
+        "points": 0.0,
+        "code": "COL",
+        "name": "Franco Colapinto",
+        "familyName": "Colapinto",
+        "constructor": "Alpine F1 Team",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": null,
+        "fastestLap": ""
+      },
+      {
+        "position": 18,
+        "positionText": "R",
+        "points": 0.0,
+        "code": "GAS",
+        "name": "Pierre Gasly",
+        "familyName": "Gasly",
+        "constructor": "Alpine F1 Team",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 19,
         "positionText": "R",
         "points": 0.0,
-        "code": "SAI",
-        "name": "Carlos Sainz",
-        "familyName": "Sainz",
-        "constructor": "Williams",
+        "code": "NOR",
+        "name": "Lando Norris",
+        "familyName": "Norris",
+        "constructor": "McLaren",
         "status": "Retired",
         "time": "",
-        "fastestRank": "20",
-        "fastestLap": "1:40.195"
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 20,
         "positionText": "R",
         "points": 0.0,
-        "code": "PER",
-        "name": "Sergio Pérez",
-        "familyName": "Pérez",
-        "constructor": "Cadillac F1 Team",
+        "code": "ALB",
+        "name": "Alexander Albon",
+        "familyName": "Albon",
+        "constructor": "Williams",
         "status": "Retired",
         "time": "",
-        "fastestRank": "21",
-        "fastestLap": "1:41.116"
+        "fastestRank": null,
+        "fastestLap": ""
       },
       {
         "position": 21,
+        "positionText": "R",
+        "points": 0.0,
+        "code": "ALO",
+        "name": "Fernando Alonso",
+        "familyName": "Alonso",
+        "constructor": "Aston Martin",
+        "status": "Retired",
+        "time": "",
+        "fastestRank": null,
+        "fastestLap": ""
+      },
+      {
+        "position": 22,
         "positionText": "R",
         "points": 0.0,
         "code": "STR",
@@ -1454,21 +1467,8 @@
         "constructor": "Aston Martin",
         "status": "Retired",
         "time": "",
-        "fastestRank": "22",
-        "fastestLap": "1:43.462"
-      },
-      {
-        "position": 22,
-        "positionText": "R",
-        "points": 0.0,
-        "code": "HAM",
-        "name": "Lewis Hamilton",
-        "familyName": "Hamilton",
-        "constructor": "Ferrari",
-        "status": "Retired",
-        "time": "",
-        "fastestRank": "19",
-        "fastestLap": "1:39.839"
+        "fastestRank": null,
+        "fastestLap": ""
       }
     ]
   },
