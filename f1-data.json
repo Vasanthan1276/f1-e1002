@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-04T05:43:53.369339+00:00",
-  "generatedLocal": "Sun 04 Oct 2026, 01:43 PM",
+  "generatedAt": "2026-10-04T12:15:21.929977+00:00",
+  "generatedLocal": "Sun 04 Oct 2026, 08:15 PM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -10,38 +10,38 @@
     "weatherType": "current"
   },
   "nextRace": {
-    "round": 16,
-    "name": "Bahrain Grand Prix in Malaysia",
-    "date": "2026-10-04",
-    "datetimeUtc": "2026-10-04T07:00:00+00:00",
-    "localDateTime": "Sun 04 Oct, 03:00 PM",
-    "circuit": "Sepang International Circuit",
-    "location": "Kuala Lumpur, Malaysia",
+    "round": 17,
+    "name": "Singapore Grand Prix",
+    "date": "2026-10-11",
+    "datetimeUtc": "2026-10-11T12:00:00+00:00",
+    "localDateTime": "Sun 11 Oct, 08:00 PM",
+    "circuit": "Marina Bay Street Circuit",
+    "location": "Marina Bay, Singapore",
     "sessions": [
       {
         "name": "FP1",
-        "datetimeUtc": "2026-10-02T04:30:00+00:00",
-        "local": "Fri 02 Oct, 12:30 PM"
+        "datetimeUtc": "2026-10-09T08:30:00+00:00",
+        "local": "Fri 09 Oct, 04:30 PM"
       },
       {
-        "name": "FP2",
-        "datetimeUtc": "2026-10-02T08:00:00+00:00",
-        "local": "Fri 02 Oct, 04:00 PM"
+        "name": "Sprint Qualifying",
+        "datetimeUtc": "2026-10-09T12:30:00+00:00",
+        "local": "Fri 09 Oct, 08:30 PM"
       },
       {
-        "name": "FP3",
-        "datetimeUtc": "2026-10-03T04:30:00+00:00",
-        "local": "Sat 03 Oct, 12:30 PM"
+        "name": "Sprint",
+        "datetimeUtc": "2026-10-10T09:00:00+00:00",
+        "local": "Sat 10 Oct, 05:00 PM"
       },
       {
         "name": "Qualifying",
-        "datetimeUtc": "2026-10-03T08:00:00+00:00",
-        "local": "Sat 03 Oct, 04:00 PM"
+        "datetimeUtc": "2026-10-10T13:00:00+00:00",
+        "local": "Sat 10 Oct, 09:00 PM"
       },
       {
         "name": "Race",
-        "datetimeUtc": "2026-10-04T07:00:00+00:00",
-        "local": "Sun 04 Oct, 03:00 PM"
+        "datetimeUtc": "2026-10-11T12:00:00+00:00",
+        "local": "Sun 11 Oct, 08:00 PM"
       }
     ]
   },
