@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "generatedAt": "2026-10-04T21:16:54.150053+00:00",
-  "generatedLocal": "Mon 05 Oct 2026, 05:16 AM",
+  "generatedAt": "2026-10-05T00:51:05.413913+00:00",
+  "generatedLocal": "Mon 05 Oct 2026, 08:51 AM",
   "season": 2026,
   "sourceState": {
     "calendar": "updated",
-    "teams": "updated"
+    "teams": "unchanged"
   },
   "outputs": [
     "calendar.bmp",
