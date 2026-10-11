@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T22:27:09.371382+00:00",
-  "generatedLocal": "Sun 11 Oct 2026, 06:27 AM",
+  "generatedAt": "2026-10-11T01:48:48.221681+00:00",
+  "generatedLocal": "Sun 11 Oct 2026, 09:48 AM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -878,7 +878,7 @@
   "driverStandings": [
     {
       "position": 1,
-      "points": 320.0,
+      "points": 325.0,
       "wins": 8,
       "code": "ANT",
       "givenName": "Andrea Kimi",
@@ -898,7 +898,7 @@
     },
     {
       "position": 3,
-      "points": 214.0,
+      "points": 221.0,
       "wins": 1,
       "code": "HAM",
       "givenName": "Lewis",
@@ -908,7 +908,7 @@
     },
     {
       "position": 4,
-      "points": 191.0,
+      "points": 197.0,
       "wins": 1,
       "code": "LEC",
       "givenName": "Charles",
@@ -918,23 +918,23 @@
     },
     {
       "position": 5,
-      "points": 188.0,
-      "wins": 2,
-      "code": "NOR",
-      "givenName": "Lando",
-      "familyName": "Norris",
-      "name": "Lando Norris",
-      "constructor": "McLaren"
-    },
-    {
-      "position": 6,
-      "points": 188.0,
+      "points": 196.0,
       "wins": 1,
       "code": "VER",
       "givenName": "Max",
       "familyName": "Verstappen",
       "name": "Max Verstappen",
       "constructor": "Red Bull"
+    },
+    {
+      "position": 6,
+      "points": 189.0,
+      "wins": 2,
+      "code": "NOR",
+      "givenName": "Lando",
+      "familyName": "Norris",
+      "name": "Lando Norris",
+      "constructor": "McLaren"
     },
     {
       "position": 7,
@@ -958,7 +958,7 @@
     },
     {
       "position": 9,
-      "points": 65.0,
+      "points": 69.0,
       "wins": 0,
       "code": "LAW",
       "givenName": "Liam",
@@ -998,7 +998,7 @@
     },
     {
       "position": 13,
-      "points": 20.0,
+      "points": 23.0,
       "wins": 0,
       "code": "BEA",
       "givenName": "Oliver",
@@ -1018,7 +1018,7 @@
     },
     {
       "position": 15,
-      "points": 7.0,
+      "points": 9.0,
       "wins": 0,
       "code": "HUL",
       "givenName": "Nico",
@@ -1110,31 +1110,31 @@
   "constructorStandings": [
     {
       "position": 1,
-      "points": 556.0,
+      "points": 561.0,
       "wins": 11,
       "name": "Mercedes"
     },
     {
       "position": 2,
-      "points": 405.0,
+      "points": 418.0,
       "wins": 2,
       "name": "Ferrari"
     },
     {
       "position": 3,
-      "points": 316.0,
+      "points": 317.0,
       "wins": 2,
       "name": "McLaren"
     },
     {
       "position": 4,
-      "points": 298.0,
+      "points": 306.0,
       "wins": 1,
       "name": "Red Bull"
     },
     {
       "position": 5,
-      "points": 90.0,
+      "points": 94.0,
       "wins": 0,
       "name": "RB F1 Team"
     },
@@ -1146,13 +1146,13 @@
     },
     {
       "position": 7,
-      "points": 27.0,
+      "points": 30.0,
       "wins": 0,
       "name": "Haas F1 Team"
     },
     {
       "position": 8,
-      "points": 17.0,
+      "points": 19.0,
       "wins": 0,
       "name": "Audi"
     },
