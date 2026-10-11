@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T08:42:58.281279+00:00",
-  "generatedLocal": "Sun 11 Oct 2026, 04:42 PM",
+  "generatedAt": "2026-10-11T15:35:51.754564+00:00",
+  "generatedLocal": "Sun 11 Oct 2026, 11:35 PM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -10,38 +10,38 @@
     "weatherType": "current"
   },
   "nextRace": {
-    "round": 17,
-    "name": "Singapore Grand Prix",
-    "date": "2026-10-11",
-    "datetimeUtc": "2026-10-11T12:00:00+00:00",
-    "localDateTime": "Sun 11 Oct, 08:00 PM",
-    "circuit": "Marina Bay Street Circuit",
-    "location": "Marina Bay, Singapore",
+    "round": 18,
+    "name": "United States Grand Prix",
+    "date": "2026-10-25",
+    "datetimeUtc": "2026-10-25T20:00:00+00:00",
+    "localDateTime": "Mon 26 Oct, 04:00 AM",
+    "circuit": "Circuit of the Americas",
+    "location": "Austin, USA",
     "sessions": [
       {
         "name": "FP1",
-        "datetimeUtc": "2026-10-09T08:30:00+00:00",
-        "local": "Fri 09 Oct, 04:30 PM"
+        "datetimeUtc": "2026-10-23T17:30:00+00:00",
+        "local": "Sat 24 Oct, 01:30 AM"
       },
       {
-        "name": "Sprint Qualifying",
-        "datetimeUtc": "2026-10-09T12:30:00+00:00",
-        "local": "Fri 09 Oct, 08:30 PM"
+        "name": "FP2",
+        "datetimeUtc": "2026-10-23T21:00:00+00:00",
+        "local": "Sat 24 Oct, 05:00 AM"
       },
       {
-        "name": "Sprint",
-        "datetimeUtc": "2026-10-10T09:00:00+00:00",
-        "local": "Sat 10 Oct, 05:00 PM"
+        "name": "FP3",
+        "datetimeUtc": "2026-10-24T17:30:00+00:00",
+        "local": "Sun 25 Oct, 01:30 AM"
       },
       {
         "name": "Qualifying",
-        "datetimeUtc": "2026-10-10T13:00:00+00:00",
-        "local": "Sat 10 Oct, 09:00 PM"
+        "datetimeUtc": "2026-10-24T21:00:00+00:00",
+        "local": "Sun 25 Oct, 05:00 AM"
       },
       {
         "name": "Race",
-        "datetimeUtc": "2026-10-11T12:00:00+00:00",
-        "local": "Sun 11 Oct, 08:00 PM"
+        "datetimeUtc": "2026-10-25T20:00:00+00:00",
+        "local": "Mon 26 Oct, 04:00 AM"
       }
     ]
   },
