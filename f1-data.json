@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T19:55:12.415142+00:00",
-  "generatedLocal": "Sun 01 Nov 2026, 03:55 AM",
+  "generatedAt": "2026-10-31T23:19:17.778040+00:00",
+  "generatedLocal": "Sun 01 Nov 2026, 07:19 AM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -1105,6 +1105,16 @@
       "familyName": "Pérez",
       "name": "Sergio Pérez",
       "constructor": "Cadillac F1 Team"
+    },
+    {
+      "position": 24,
+      "points": 0.0,
+      "wins": 0,
+      "code": "HIR",
+      "givenName": "Ryo",
+      "familyName": "Hirakawa",
+      "name": "Ryo Hirakawa",
+      "constructor": "Haas F1 Team"
     }
   ],
   "constructorStandings": [
