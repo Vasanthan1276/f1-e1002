@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-02T10:54:20.108641+00:00",
-  "generatedLocal": "Mon 02 Nov 2026, 06:54 PM",
+  "generatedAt": "2026-11-02T20:43:36.363946+00:00",
+  "generatedLocal": "Tue 03 Nov 2026, 04:43 AM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -938,7 +938,7 @@
     },
     {
       "position": 7,
-      "points": 150.0,
+      "points": 144.0,
       "wins": 0,
       "code": "PIA",
       "givenName": "Oscar",
@@ -948,7 +948,7 @@
     },
     {
       "position": 8,
-      "points": 105.0,
+      "points": 107.0,
       "wins": 0,
       "code": "HAD",
       "givenName": "Isack",
@@ -958,7 +958,7 @@
     },
     {
       "position": 9,
-      "points": 79.0,
+      "points": 83.0,
       "wins": 0,
       "code": "LAW",
       "givenName": "Liam",
@@ -968,7 +968,7 @@
     },
     {
       "position": 10,
-      "points": 43.0,
+      "points": 42.0,
       "wins": 0,
       "code": "GAS",
       "givenName": "Pierre",
@@ -988,7 +988,7 @@
     },
     {
       "position": 12,
-      "points": 31.0,
+      "points": 27.0,
       "wins": 0,
       "code": "COL",
       "givenName": "Franco",
@@ -1008,22 +1008,22 @@
     },
     {
       "position": 14,
+      "points": 14.0,
+      "wins": 0,
+      "code": "BOR",
+      "givenName": "Gabriel",
+      "familyName": "Bortoleto",
+      "name": "Gabriel Bortoleto",
+      "constructor": "Audi"
+    },
+    {
+      "position": 15,
       "points": 13.0,
       "wins": 0,
       "code": "HUL",
       "givenName": "Nico",
       "familyName": "Hülkenberg",
       "name": "Nico Hülkenberg",
-      "constructor": "Audi"
-    },
-    {
-      "position": 15,
-      "points": 10.0,
-      "wins": 0,
-      "code": "BOR",
-      "givenName": "Gabriel",
-      "familyName": "Bortoleto",
-      "name": "Gabriel Bortoleto",
       "constructor": "Audi"
     },
     {
@@ -1078,6 +1078,16 @@
     },
     {
       "position": 21,
+      "points": 1.0,
+      "wins": 0,
+      "code": "HIR",
+      "givenName": "Ryo",
+      "familyName": "Hirakawa",
+      "name": "Ryo Hirakawa",
+      "constructor": "Haas F1 Team"
+    },
+    {
+      "position": 22,
       "points": 0.0,
       "wins": 0,
       "code": "STR",
@@ -1087,7 +1097,7 @@
       "constructor": "Aston Martin"
     },
     {
-      "position": 22,
+      "position": 23,
       "points": 0.0,
       "wins": 0,
       "code": "BOT",
@@ -1095,16 +1105,6 @@
       "familyName": "Bottas",
       "name": "Valtteri Bottas",
       "constructor": "Cadillac F1 Team"
-    },
-    {
-      "position": 23,
-      "points": 0.0,
-      "wins": 0,
-      "code": "HIR",
-      "givenName": "Ryo",
-      "familyName": "Hirakawa",
-      "name": "Ryo Hirakawa",
-      "constructor": "Haas F1 Team"
     },
     {
       "position": 24,
@@ -1132,37 +1132,37 @@
     },
     {
       "position": 3,
-      "points": 380.0,
+      "points": 382.0,
       "wins": 3,
       "name": "Red Bull"
     },
     {
       "position": 4,
-      "points": 371.0,
+      "points": 365.0,
       "wins": 2,
       "name": "McLaren"
     },
     {
       "position": 5,
-      "points": 104.0,
+      "points": 108.0,
       "wins": 0,
       "name": "RB F1 Team"
     },
     {
       "position": 6,
-      "points": 74.0,
+      "points": 69.0,
       "wins": 0,
       "name": "Alpine F1 Team"
     },
     {
       "position": 7,
-      "points": 30.0,
+      "points": 31.0,
       "wins": 0,
       "name": "Haas F1 Team"
     },
     {
       "position": 8,
-      "points": 23.0,
+      "points": 27.0,
       "wins": 0,
       "name": "Audi"
     },
@@ -1276,32 +1276,6 @@
         "position": 7,
         "positionText": "7",
         "points": 6.0,
-        "code": "PIA",
-        "name": "Oscar Piastri",
-        "familyName": "Piastri",
-        "constructor": "McLaren",
-        "status": "Finished",
-        "time": "+19.475",
-        "fastestRank": "9",
-        "fastestLap": "1:20.690"
-      },
-      {
-        "position": 8,
-        "positionText": "8",
-        "points": 4.0,
-        "code": "COL",
-        "name": "Franco Colapinto",
-        "familyName": "Colapinto",
-        "constructor": "Alpine F1 Team",
-        "status": "Finished",
-        "time": "+20.204",
-        "fastestRank": "12",
-        "fastestLap": "1:20.750"
-      },
-      {
-        "position": 9,
-        "positionText": "9",
-        "points": 2.0,
         "code": "LAW",
         "name": "Liam Lawson",
         "familyName": "Lawson",
@@ -1312,22 +1286,9 @@
         "fastestLap": "1:20.713"
       },
       {
-        "position": 10,
-        "positionText": "10",
-        "points": 1.0,
-        "code": "GAS",
-        "name": "Pierre Gasly",
-        "familyName": "Gasly",
-        "constructor": "Alpine F1 Team",
-        "status": "Finished",
-        "time": "+21.483",
-        "fastestRank": "13",
-        "fastestLap": "1:20.754"
-      },
-      {
-        "position": 11,
-        "positionText": "11",
-        "points": 0.0,
+        "position": 8,
+        "positionText": "8",
+        "points": 4.0,
         "code": "BOR",
         "name": "Gabriel Bortoleto",
         "familyName": "Bortoleto",
@@ -1338,9 +1299,9 @@
         "fastestLap": "1:20.872"
       },
       {
-        "position": 12,
-        "positionText": "12",
-        "points": 0.0,
+        "position": 9,
+        "positionText": "9",
+        "points": 2.0,
         "code": "HAD",
         "name": "Isack Hadjar",
         "familyName": "Hadjar",
@@ -1351,9 +1312,9 @@
         "fastestLap": "1:20.244"
       },
       {
-        "position": 13,
-        "positionText": "13",
-        "points": 0.0,
+        "position": 10,
+        "positionText": "10",
+        "points": 1.0,
         "code": "HIR",
         "name": "Ryo Hirakawa",
         "familyName": "Hirakawa",
@@ -1364,8 +1325,8 @@
         "fastestLap": "1:20.984"
       },
       {
-        "position": 14,
-        "positionText": "14",
+        "position": 11,
+        "positionText": "11",
         "points": 0.0,
         "code": "ALB",
         "name": "Alexander Albon",
@@ -1377,8 +1338,8 @@
         "fastestLap": "1:21.114"
       },
       {
-        "position": 15,
-        "positionText": "15",
+        "position": 12,
+        "positionText": "12",
         "points": 0.0,
         "code": "SAI",
         "name": "Carlos Sainz",
@@ -1390,8 +1351,21 @@
         "fastestLap": "1:21.339"
       },
       {
-        "position": 16,
-        "positionText": "16",
+        "position": 13,
+        "positionText": "13",
+        "points": 0.0,
+        "code": "PIA",
+        "name": "Oscar Piastri",
+        "familyName": "Piastri",
+        "constructor": "McLaren",
+        "status": "Finished",
+        "time": "+29.475",
+        "fastestRank": "9",
+        "fastestLap": "1:20.690"
+      },
+      {
+        "position": 14,
+        "positionText": "14",
         "points": 0.0,
         "code": "HUL",
         "name": "Nico Hülkenberg",
@@ -1403,8 +1377,21 @@
         "fastestLap": "1:20.732"
       },
       {
-        "position": 17,
-        "positionText": "17",
+        "position": 15,
+        "positionText": "15",
+        "points": 0.0,
+        "code": "COL",
+        "name": "Franco Colapinto",
+        "familyName": "Colapinto",
+        "constructor": "Alpine F1 Team",
+        "status": "Finished",
+        "time": "+30.204",
+        "fastestRank": "12",
+        "fastestLap": "1:20.750"
+      },
+      {
+        "position": 16,
+        "positionText": "16",
         "points": 0.0,
         "code": "PER",
         "name": "Sergio Pérez",
@@ -1414,6 +1401,19 @@
         "time": "+30.695",
         "fastestRank": "18",
         "fastestLap": "1:21.256"
+      },
+      {
+        "position": 17,
+        "positionText": "17",
+        "points": 0.0,
+        "code": "GAS",
+        "name": "Pierre Gasly",
+        "familyName": "Gasly",
+        "constructor": "Alpine F1 Team",
+        "status": "Finished",
+        "time": "+51.483",
+        "fastestRank": "13",
+        "fastestLap": "1:20.754"
       },
       {
         "position": 18,
