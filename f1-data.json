@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-07T22:41:15.576010+00:00",
-  "generatedLocal": "Sun 08 Nov 2026, 06:41 AM",
+  "generatedAt": "2026-11-08T02:22:05.486533+00:00",
+  "generatedLocal": "Sun 08 Nov 2026, 10:22 AM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -1115,6 +1115,16 @@
       "familyName": "Pérez",
       "name": "Sergio Pérez",
       "constructor": "Cadillac F1 Team"
+    },
+    {
+      "position": 25,
+      "points": 0.0,
+      "wins": 0,
+      "code": "CAM",
+      "givenName": "Rafael",
+      "familyName": "Camara",
+      "name": "Rafael Camara",
+      "constructor": "Haas F1 Team"
     }
   ],
   "constructorStandings": [
