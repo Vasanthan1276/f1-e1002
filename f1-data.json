@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-08T21:05:32.729346+00:00",
-  "generatedLocal": "Mon 09 Nov 2026, 05:05 AM",
+  "generatedAt": "2026-11-09T00:47:39.288118+00:00",
+  "generatedLocal": "Mon 09 Nov 2026, 08:47 AM",
   "season": 2026,
   "timezone": "Asia/Singapore",
   "config": {
@@ -918,7 +918,7 @@
     },
     {
       "position": 5,
-      "points": 251.0,
+      "points": 249.0,
       "wins": 1,
       "code": "LEC",
       "givenName": "Charles",
@@ -958,7 +958,7 @@
     },
     {
       "position": 9,
-      "points": 87.0,
+      "points": 89.0,
       "wins": 0,
       "code": "LAW",
       "givenName": "Liam",
@@ -1136,7 +1136,7 @@
     },
     {
       "position": 2,
-      "points": 512.0,
+      "points": 510.0,
       "wins": 2,
       "name": "Ferrari"
     },
@@ -1154,7 +1154,7 @@
     },
     {
       "position": 5,
-      "points": 112.0,
+      "points": 114.0,
       "wins": 0,
       "name": "RB F1 Team"
     },
@@ -1214,8 +1214,8 @@
         "constructor": "McLaren",
         "status": "Finished",
         "time": "1:35:23.504",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "3",
+        "fastestLap": "1:12.983"
       },
       {
         "position": 2,
@@ -1227,8 +1227,8 @@
         "constructor": "Red Bull",
         "status": "Finished",
         "time": "+14.602",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "5",
+        "fastestLap": "1:13.131"
       },
       {
         "position": 3,
@@ -1240,8 +1240,8 @@
         "constructor": "Red Bull",
         "status": "Finished",
         "time": "+24.485",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "2",
+        "fastestLap": "1:12.877"
       },
       {
         "position": 4,
@@ -1253,8 +1253,8 @@
         "constructor": "Mercedes",
         "status": "Finished",
         "time": "+33.991",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "12",
+        "fastestLap": "1:14.040"
       },
       {
         "position": 5,
@@ -1265,9 +1265,9 @@
         "familyName": "Antonelli",
         "constructor": "Mercedes",
         "status": "Finished",
-        "time": "+36.017",
-        "fastestRank": null,
-        "fastestLap": ""
+        "time": "+41.017",
+        "fastestRank": "1",
+        "fastestLap": "1:12.689"
       },
       {
         "position": 6,
@@ -1279,34 +1279,34 @@
         "constructor": "McLaren",
         "status": "Finished",
         "time": "+56.475",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "4",
+        "fastestLap": "1:13.018"
       },
       {
         "position": 7,
         "positionText": "7",
         "points": 6.0,
-        "code": "LEC",
-        "name": "Charles Leclerc",
-        "familyName": "Leclerc",
-        "constructor": "Ferrari",
-        "status": "Finished",
-        "time": "+1:13.586",
-        "fastestRank": null,
-        "fastestLap": ""
-      },
-      {
-        "position": 8,
-        "positionText": "8",
-        "points": 4.0,
         "code": "LAW",
         "name": "Liam Lawson",
         "familyName": "Lawson",
         "constructor": "RB F1 Team",
         "status": "Finished",
         "time": "+1:15.402",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "6",
+        "fastestLap": "1:13.495"
+      },
+      {
+        "position": 8,
+        "positionText": "8",
+        "points": 4.0,
+        "code": "LEC",
+        "name": "Charles Leclerc",
+        "familyName": "Leclerc",
+        "constructor": "Ferrari",
+        "status": "Finished",
+        "time": "+1:18.586",
+        "fastestRank": "13",
+        "fastestLap": "1:14.170"
       },
       {
         "position": 9,
@@ -1318,8 +1318,8 @@
         "constructor": "Ferrari",
         "status": "Lapped",
         "time": "+4.427",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "8",
+        "fastestLap": "1:13.724"
       },
       {
         "position": 10,
@@ -1331,8 +1331,8 @@
         "constructor": "Audi",
         "status": "Lapped",
         "time": "+17.105",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "9",
+        "fastestLap": "1:14.000"
       },
       {
         "position": 11,
@@ -1344,8 +1344,8 @@
         "constructor": "RB F1 Team",
         "status": "Lapped",
         "time": "+19.130",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "10",
+        "fastestLap": "1:14.004"
       },
       {
         "position": 12,
@@ -1357,8 +1357,8 @@
         "constructor": "Aston Martin",
         "status": "Lapped",
         "time": "+36.856",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "18",
+        "fastestLap": "1:14.706"
       },
       {
         "position": 13,
@@ -1370,8 +1370,8 @@
         "constructor": "Alpine F1 Team",
         "status": "Lapped",
         "time": "+50.488",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "7",
+        "fastestLap": "1:13.710"
       },
       {
         "position": 14,
@@ -1383,8 +1383,8 @@
         "constructor": "Alpine F1 Team",
         "status": "Lapped",
         "time": "+58.677",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "15",
+        "fastestLap": "1:14.462"
       },
       {
         "position": 15,
@@ -1396,8 +1396,8 @@
         "constructor": "Williams",
         "status": "Lapped",
         "time": "+1:04.101",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "16",
+        "fastestLap": "1:14.464"
       },
       {
         "position": 16,
@@ -1409,8 +1409,8 @@
         "constructor": "Audi",
         "status": "Lapped",
         "time": "+1:16.420",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "19",
+        "fastestLap": "1:14.940"
       },
       {
         "position": 17,
@@ -1421,9 +1421,9 @@
         "familyName": "Bearman",
         "constructor": "Haas F1 Team",
         "status": "Lapped",
-        "time": "+1:26.711",
-        "fastestRank": null,
-        "fastestLap": ""
+        "time": "+1:31.711",
+        "fastestRank": "11",
+        "fastestLap": "1:14.036"
       },
       {
         "position": 18,
@@ -1435,8 +1435,8 @@
         "constructor": "Cadillac F1 Team",
         "status": "Lapped",
         "time": "+27.120",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "20",
+        "fastestLap": "1:16.123"
       },
       {
         "position": 19,
@@ -1448,8 +1448,8 @@
         "constructor": "Williams",
         "status": "Lapped",
         "time": "+32.463",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "17",
+        "fastestLap": "1:14.613"
       },
       {
         "position": 20,
@@ -1461,8 +1461,8 @@
         "constructor": "Haas F1 Team",
         "status": "Lapped",
         "time": "+51.715",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "14",
+        "fastestLap": "1:14.369"
       },
       {
         "position": 21,
@@ -1474,8 +1474,8 @@
         "constructor": "Aston Martin",
         "status": "Retired",
         "time": "",
-        "fastestRank": null,
-        "fastestLap": ""
+        "fastestRank": "21",
+        "fastestLap": "1:17.430"
       },
       {
         "position": 22,
